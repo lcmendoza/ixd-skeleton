@@ -186,6 +186,12 @@ h2 {
   font-family: sans-serif;
   text-align: center;
   color: #DB8A74;}
+
+.button5{
+  background-color: #DB8A74;
+  font-family: sans-serif;
+  padding- bottom:50px;
+}
 img {
   border: 1px solid #ddd;
   border-radius: 4px;
@@ -208,6 +214,14 @@ h3{
 }
  h4 {
   color: #DB8A74;
+}
+
+.table i{
+  color: #000000;
+  font-size:;
+  font-family:sans-serif;
+  text-align: left;
+  padding: 10px 10px;
 }
 
 i{
@@ -240,7 +254,9 @@ i{
   width: 100%;
 }
 
-
+.img {
+  border-radius :50%;
+}
 
 /* Chat containers */
 /*

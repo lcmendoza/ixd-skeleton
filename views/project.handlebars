@@ -6,17 +6,104 @@
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="/css/app.css" rel="stylesheet">
+     <link href= "/css/keyboard.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
   </head>
   <body>
 	<div class="container">
 		<div class="heading">
-  			<h1>{{projectName}}</h1>
+     <table>
+      <tr>
+         <td> <button onclick="goBack()" style = "float:left"><i class="fas fa-arrow-circle-left"></i> </button>
+          <script>
+function goBack() {
+  window.history.back();
+}
+</script>
+  			<h1>{{projectName}}</h1></td>
+      
+</td>
+</tr>
+</table>
 		</div>
+    <div class="sleep"></div>
+    <div class="volume"></div>
+    <div class="camera"></div>
+    <div class="screen">
+      <div class="screen-container">
+          <div class="time"></div>
+          <div class="battery">
+            <i class="zmdi zmdi-battery"></i>
+          </div>
+          <div class="network">
+            <i class="zmdi zmdi-network"></i>
+          </div>
+          <div class="wifi">
+            <i class="zmdi zmdi-wifi-alt-2"></i>
+          </div>
+          <div class="star">
+            <i class="zmdi zmdi-star"></i>
+          </div>
+        </div>
+        <div class="chat">
+              <div class="actions attachment">
+                <i class="zmdi zmdi-attachment-alt"></i>
+              </div>
+              <div class="actions">
+                <i class="zmdi zmdi-phone"></i>
+              </div>
+            </div>
+            <div class="conversation">
+              <div class="conversation-container">
+                <div class="message sent">
+                  Hey how are you feeling?
+                  <span class="metadata">
+                      <span class="time"></span><span class="tick">
+                  </span>
+                </div>
+                <div class="message received">
+                  Not so good..
+                  <span class="metadata"><span class="time"></span></span>
+                </div>
+                <div class="message sent">
+                  I'll come over with a movie and some snacks?
+                  <span class="metadata"> <span class = "time"></span>
+                  </span>
+                </div>
+                <div class="message received">
+                  <span id="random">Wow, that would really cheer me up :)</span>
+                  <span class="metadata"><span class="time"></span></span>
+                  </div>
+                  <div class ="message received">
+                    <span id="random"> <h3> <img src = "/images/joyemoji.png" class ="img"> Status updated: Bob is feeling a little better! </h3> </span>
+                </div>
+              </div>
+              <form class="conversation-compose">
+                     <button class="send">
+                 <div class="circle">
+                  <td class="icon"> <i class="fas fa-smile-beam"></i>
+                    </div>
+                  </button>
+                <input class="input-msg" name="input" placeholder="  Help each other feel the best!" autocomplete="off" autofocus></input>
+                <button class="send">
+                    <div class="circle">
+                      <i class="fas fa-share-square"></i>
+                     
+                    </div>
+                  </button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
-<textarea id="ipad"></textarea>
 
-    <p><a href="window.history.back()">Back</a></p>
+
+
 
     <br>
 
@@ -25,5 +112,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/project.js"></script>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<script type="text/javascript" src="js/keyboard.js"></script>
+
   </body>
 </html>
