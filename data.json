@@ -1,0 +1,19 @@
+{
+	"projects": [
+		{
+			"name": "Bob",
+			"date": "2/1/19 6:30PM",
+			"id": "chat1"
+		},
+		{
+			"name": "Cathy",
+			"date": "1/31/19 12:00PM",
+			"id": "chat2"
+		},
+		{
+			"name": "Sam",
+			"date": "1/30/19 9:00PM",
+			"id": "chat3"
+		}
+	]
+}

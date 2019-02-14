@@ -1,0 +1,289 @@
+body {
+  background-color: #FFFFFF;
+  padding: 20px;
+  margin: 0;
+}
+h1, h2, p, ul, li {
+  font-family: sans-serif;
+}
+h1{
+  text-align: center;
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight:bolder;
+}
+
+.heading {
+  position: center;
+  background: none;
+  background-color: #DB8A74;
+  width : 100%;
+  height: 150px;
+}
+
+.heading h1{
+  padding: 30px;
+   text-align: center;
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight:bolder;
+
+}
+
+
+.heading p {
+     color: #6e6e6e;
+}
+
+.table h3{
+   text-align: left;
+  color: #000000;
+  font-size: 20px;
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.col-sm-3{
+  text-align:center;
+}
+.menu{
+  position: center;
+  background: none;
+  background-color: #DB8A74;
+  width : 100%;
+  height: 150px;
+}
+
+.menu h3{
+  color: #ffffff;
+   align-content: center;
+   text-align: center;
+   padding: 30px;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:#DB8A74;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: #4CAF50;
+}
+
+ul.footer {
+    background-color: #DB8A74;
+  padding: 5px;
+}
+
+ul.pretty li {
+  display: inline;
+  list-style-type: none;
+  margin: 0;
+}
+ul.pretty {
+    background-color: #FFFFFF;
+  padding: 10px;
+}
+ul.pretty li a {
+  font-weight: bold;
+  text-decoration: none;
+  padding: 20px;
+  display: inline-block;
+  color: #444242;
+}
+.content {
+  background-color: #FFFFFF;
+  padding: 20px;
+}
+.content h2 {
+  padding: 0;
+  margin: 0;
+}
+.content li {
+  margin-bottom: 10px;
+  color: #DB8A74;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+}
+
+h2 {
+  font-family: sans-serif;
+  background-color: #fccccc; 
+  border: none;
+  color: #DB8A74;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 0px;
+  border-radius: 12px;
+  width: 50%;
+}
+
+.button {
+  font-family: sans-serif;
+  background-color: #FFFFFF; 
+  border: none;
+  color: #0000;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 0px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.button1{
+  background-color: #DB8A74;
+  text-align:center;
+}
+
+.button3 {
+  border-radius: 12px;
+  padding: 5px 80px;
+  background-color: #444242;
+  height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #DB8A74;
+}
+
+.button2 {
+  border-radius: 12px;
+  padding: 5px 90px;
+  background-color: #fbefef;
+  height: 50px;
+  font-family: sans-serif;
+  text-align: center;
+  color: #DB8A74;}
+img {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+  width: 100px;
+}
+
+p {
+  color: #DB8A74;
+
+}
+
+table {
+  width: 100%;
+  border-spacing: 5px;
+}
+
+h3{
+  color: #FFFFFF;
+}
+ h4 {
+  color: #DB8A74;
+}
+
+i{
+  color: #ffffff;
+  font-size: 50px;
+   align-content: center;
+   text-align: center;
+
+}
+
+.mobile-app-icon-bar {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+          justify-content: space-around;
+  background: #DB8A74;
+}
+
+.mobile-app-icon-bar button {
+  padding: 12.5px;
+  cursor: pointer;
+}
+
+.thumbnail {
+  width: 100%;
+}
+
+
+
+/* Chat containers */
+/*
+.container {
+  border: 2px solid #dedede;
+  background-color: #ffffff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+.darker {
+  border-color: #ccc;
+  background-color: #ddd;
+}
+
+.container::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+
+.container img {
+  float: left;
+  max-width: 60px;
+  width: 100%;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+
+.container img.right {
+  float: right;
+  margin-left: 20px;
+  margin-right:0;
+}
+
+
+.time-right {
+ display: inline-block;
+  text-align: center;
+  color: #aaa;
+  font-size:20px;
+}
+*/

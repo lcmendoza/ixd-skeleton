@@ -1,8 +1,54 @@
 <html>
 <head>
 	<title>Test Page</title>
+	 <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-theme.min.css" rel="stylesheet">
+<link href="css/app.css" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<link rel="stylesheet" href="scss/app.scss">
 </head>
 <body>
-Begin here (or replace this with any static code already written).
+<div class = "container">
+  	<div class ="heading">
+  <h1>Home</h1>
+     <p align = "right"> I </p> 
+      </div>
+<div class = "row">
+
+ <div class = "col-sm-12"> <button class="button button2" > Messages </button></div>
+</table>
+</ul>
+</div>
+<div class = "table">
+  <table>
+ {{#each projects}}
+  <div class = "chat" id = "{{id}}">
+ <tr>
+ <td> 
+  <a href = "project/{{name}}" class ="thumbnail">
+<button class ="button button4"> <i class="fas fa-smile"></i> <h3>{{name}} <p style = "float:right"> {{date}} </p></h3></button>
+ 
+ </tr>
+</a>
+</div>
+{{/each}}
+ </table>
+ </div>
+
+ <div class="mobile-app-icon-bar">
+  <button class = "button button1"><i class="fas fa-home" aria-hidden="true"></i></button>
+  <button class = "button button1"><i class="fas fa-user" aria-hidden="true"></i></button>
+  <button class = "button button1"><i class="fas fa-plus-square" aria-hidden="true"></i></button>
+  <button class = "button button1"><i class="fa fa-cog" aria-hidden="true"></i></button>
+</div>
+          
+         
+</div>
+</div>
+<script src="https://code.jquery.com/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
