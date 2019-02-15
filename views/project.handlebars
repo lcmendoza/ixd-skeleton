@@ -8,25 +8,26 @@
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
      <link href= "/css/keyboard.css" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-
+     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   </head>
   <body>
-	<div class="container">
-		<div class="heading">
-     <table>
-      <tr>
-         <td> <button onclick="goBack()" style = "float:left"><i class="fas fa-arrow-circle-left"></i> </button>
-          <script>
+	<div class ="w3-row-padding">
+<header class="w3-container" style="background-color:#DB8A74" >
+  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
+  <script>
 function goBack() {
   window.history.back();
 }
-</script>
-  			<h1>{{projectName}}</h1></td>
-      
-</td>
-</tr>
-</table>
-		</div>
+</script> 
+  <div class="w3-center">
+  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">{{projectName}}</h1>
+    <div class="w3-padding-32">
+
+    </div>
+  </div>
+</header>
+</div>
+  <div class ="w3-row-padding">
     <div class="sleep"></div>
     <div class="volume"></div>
     <div class="camera"></div>
