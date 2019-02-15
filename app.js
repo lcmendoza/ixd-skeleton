@@ -9,6 +9,7 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
+var login = require("./routes/login"); 
 var project = require("./routes/project");
 var home = require("./routes/home");
 var add = require("./routes/add");
@@ -37,10 +38,10 @@ app.use(express.static(path.join(__dirname, 'public')));
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
-
-app.get('/', index.view);
+app.get('/', login.viewLogin);
+app.get('/index', index.view);
 app.get('/project/:name', project.viewProject);
-app.get('/home/:name', home.viewHome);
+app.get('/home', home.viewHome);
 app.get('/add/:name', add.viewAdd);
 app.get('/addFriend', addFriend.addFriend);
 // Example route
