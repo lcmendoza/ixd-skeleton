@@ -3,24 +3,24 @@
   <head>
     <title>Project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
      <link href= "/css/keyboard.css" rel="stylesheet">
+          <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
       <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
    
   </head>
   <body>
 	<div class ="w3-row-padding">
 <header class="w3-container" style="background-color:#DB8A74" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
+  <button class ="send"><i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
+</button>
   <div class="w3-center">
   <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">{{projectName}} 
    <i onclick="document.getElementById('id01').style.display='block'" 
@@ -131,7 +131,7 @@ function goBack() {
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/project.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/keyboard.js"></script>
+<script type="text/javascript" src="js/project.js"></script>
 
   </body>
 </html>
