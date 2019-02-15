@@ -37,13 +37,9 @@ function goBack() {
   <div class="w3-container" style="background-color:#fbefef">
     <h3>Search</h3>
   </div>
-  {{# each addFriend}}
-    <div class="friend-div">
-      <img src="{{imageURL}}" class="img-responsive img-rounded">
-      <h3><a href="addFriend/{{name}}"></a></h3>
-      <p>{{description}}</p>
-    </div>
-    {{/ each}}
+   <div class="w3-container">
+  </div>
+  
   <div class="w3-container">
  <form id="addFriendForm" role="form" method="get" action="/add">
         <div class="form-group">

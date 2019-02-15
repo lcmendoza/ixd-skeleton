@@ -14,6 +14,7 @@ var project = require("./routes/project");
 var home = require("./routes/home");
 var add = require("./routes/add");
 var addFriend = require("./routes/addFriend");
+var settings = require("./routes/settings");
 // Example route
 // var user = require('./routes/user');
 
@@ -44,6 +45,7 @@ app.get('/project/:name', project.viewProject);
 app.get('/home', home.viewHome);
 app.get('/add/:name', add.viewAdd);
 app.get('/addFriend', addFriend.addFriend);
+app.get('/settings', settings.viewSettings);
 // Example route
 // app.get('/users', user.list);
 
