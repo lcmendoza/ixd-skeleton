@@ -164,7 +164,7 @@ h2 {
   display: inline-block;
   font-size: 20px;
   margin: 2px 0px;
-  border-radius: 12px;
+  
   width: 100%;
 }
 
@@ -231,26 +231,38 @@ h3{
 
 i{
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
    align-content: center;
    text-align: center;
+
 
 }
 
 .mobile-app-icon-bar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  background: #DB8A74;
+  list-style-type: none;
+  padding-left:0;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #DB8A74;
+position: fixed;
+  bottom: 0;
+  align-content: center;
+  width:100%;
 }
 
+.mobile-app-icon-bar ul li {
+  display: inline-block;
+  padding: 5px 0 3px;
+  width: 25%;
+  text-align: center;
+  font-size: 12px;
+  background-color: #DB8A74;
+}
+.mobile-app-icon-bar p{
+  color : #FFFFFF;
+} 
 .mobile-app-icon-bar button {
+  background-color: #DB8A74;
   padding: 12.5px;
   cursor: pointer;
 }

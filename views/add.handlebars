@@ -10,6 +10,7 @@
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.js"></script>
 
 
@@ -42,7 +43,7 @@ function goBack() {
   
   <div class="w3-container">
  <form id="addFriendForm" role="form" method="get" action="/add">
-        <div class="form-group">
+        <div class= "form-group">
           <label for="name">Name:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
@@ -51,8 +52,7 @@ function goBack() {
           <input type="text" class="form-control" id="description" placeholder="Description" name="description">
         </div>
     </form>
-    <h3></h3>
-</h3>
+
   </div>
   <ul class="w3-ul w3-border-top">
    
@@ -62,13 +62,29 @@ function goBack() {
 </div>
 <div class="w3-twothird">
 <div class="w3-card white">
-
   <ul class="w3-ul w3-border-top">
   </ul>
 </div>
 </div>
-
-
+</div>
+<div class = "row">
+<div class="mobile-app-icon-bar" >
+  <ul>
+  <li> <a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> 
+    <p class ="no-margin"> Home </p> </a>
+  </li>
+  <li> <a href ="/index"><i class="fas fa-user" aria-hidden="true"></i>
+    <p class ="no-margin"> Chat List </p></a>
+  </li>
+ <li> <a href ="add/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
+  <p class ="no-margin"> Add Friends </p> </a>
+</li>
+ <li><a href ="/settings"><i class="fa fa-cog" aria-hidden="true"></i>
+  <p class ="no-margin"> Settings </p> </a>
+</li>
+</ul>
+</div>
+</div>
 
 
 

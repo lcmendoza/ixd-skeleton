@@ -5,6 +5,12 @@ i{
    text-align: center;
 
 }
+
+.w3-container{
+  overflow:hidden;
+  top:0;
+  width: 100%;
+}
 .heading {
   position: center;
   background: none;
@@ -51,20 +57,7 @@ th, td {
   height: 100%;
   width:100%;
 }
-.button {
-  font-family: sans-serif;
-  background-color: #FFFFFF; 
-  border: none;
-  color: #0000;
-  padding: 20px;
-  text-align: left;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 20px;
-  margin: 2px 0px;
-  border-radius: 12px;
-  width: 100%;
-}
+
 
 .button2 {
   border-radius: 12px;
@@ -112,24 +105,9 @@ th, td {
   align-content: center;
 }
 
-.mobile-app-icon-bar {
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-align-items: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-justify-content: space-around;
-      -ms-flex-pack: distribute;
-          justify-content: space-around;
-  background: #FFFFFF;
-}
 
-.mobile-app-icon-bar button {
-  padding: 12.5px;
-  text-align:center;
-  cursor: not-allowed;
-}
+
+
 * {
   box-sizing: border-box;
 }
@@ -145,6 +123,52 @@ body {
   background-color: #DB8A74;
   width : 100%;
   height: 150px;
+}
+
+.mobile-app-icon-bar {
+  list-style-type: none;
+  padding-left:0;
+  margin-bottom: 0;
+  margin-top: 0;
+  background-color: #DB8A74;
+position: fixed;
+  bottom: 0;
+  align-content: center;
+  width:100%;
+}
+
+.mobile-app-icon-bar ul li {
+  display: inline-block;
+  padding-left : 0px;
+  height: 10px;
+  width: 25%;
+  text-align: center;
+  font-size: 12px;
+  background-color: #DB8A74;
+}
+.mobile-app-icon-bar p{
+  color : #FFFFFF;
+} 
+.mobile-app-icon-bar button {
+  background-color: #DB8A74;
+  padding: 12.5px;
+  cursor: pointer;
+}
+
+.button {
+  font-family: sans-serif;
+  background-color: #FFFFFF; 
+  border: none;
+  color: #0000;
+  padding: 20px;
+  text-align: left;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin: 2px 0px;
+  border-radius: 12px;
+  width: 100%;
+
 }
 
 .column {
@@ -164,6 +188,7 @@ body {
 .column.third{
   width:75%;
 }
+
 .row:after {
   content: "";
   display: table;
@@ -179,6 +204,29 @@ body {
 }
 
 
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
+}
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color:#DB8A74;
+  text-align: center;
+  padding: 10px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
 @media (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
