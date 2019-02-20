@@ -148,6 +148,11 @@ h2 {
   width: 50%;
 }
 
+#login-header {
+  width: 100%;
+  clear: both;
+}
+
 .button {
   font-family: sans-serif;
   background-color: #FFFFFF; 
@@ -190,7 +195,7 @@ h2 {
 .button5{
   background-color: #DB8A74;
   font-family: sans-serif;
-  padding- bottom:50px;
+  padding-bottom: 50px;
 }
 img {
   border: 1px solid #ddd;
@@ -218,7 +223,7 @@ h3{
 
 .table i{
   color: #000000;
-  font-size:;
+  font-size: 50px;
   font-family:sans-serif;
   text-align: left;
   padding: 10px 10px;
@@ -256,6 +261,7 @@ position: fixed;
 }
 .mobile-app-icon-bar p{
   color : #FFFFFF;
+  font-size: 10px;
 } 
 .mobile-app-icon-bar button {
   background-color: #DB8A74;
@@ -269,6 +275,11 @@ position: fixed;
 
 .img {
   border-radius :50%;
+}
+
+.container input {
+  width: 100%;
+  clear: both;
 }
 
 /* Chat containers */
