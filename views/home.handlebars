@@ -19,19 +19,14 @@
 
 
 <header class="w3-container" style="background-color:#DB8A74; padding-top:10px;" >
-  <i onclick="goBack()" class="fas fa-sign-out-alt" style="background-color:#DB8A74"></i>
+  <a href="/"><i class="fas fa-sign-out-alt" style="background-color:#DB8A74"></i>
    <p class ="no-margin" style = "color: #FFFFFF"> Logout </p></a>
-  <script>
-function goBack() {
-  window.history.back();
-}
-</script> 
-
+  
   <div class="w3-center">
  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">Home
    <i onclick="document.getElementById('id01').style.display='block'" 
    class="fas fa-info-circle" style="color:white"> </i> 
-</h1>
+  </h1>
     <div class="w3-padding-32">
 
     </div>
@@ -40,12 +35,19 @@ function goBack() {
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
       <header class="w3-container w3-theme-l1"  style="background-color:#DB8A74" > 
-         <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">Help</h1>
+         <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white" align="center">Help</h1>
         <span onclick="document.getElementById('id01').style.display='none'"
         class="w3-button w3-display-topright">×</span>
       </header>
     <div class="w3-container" style="background-color:white"> 
-      <h4 style="color: #000000"> </h4></div>
+      <h4 style="color: #000000">
+        • Customize your avatar based on how you are feeling today. There are several to choose from!<br><br>
+        • Write out any thoughts you have about your feelings and let your friends know how you are doing.<br><br>
+        • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are feeling!<br><br>
+        • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can compare how you were feeling today versus three days ago!<br>
+
+
+      </h4></div>
 </div>
 </div>
 
@@ -72,7 +74,7 @@ function goBack() {
   </div>
   <div class="w3-container">
   <h3 class="w3-text-theme">
-    <textarea rows="4px" > Write your personal thoughts here! </textarea></h3>
+    <textarea rows="4px" >Write your personal thoughts here! </textarea></h3>
   </div>
   <ul class="w3-ul w3-border-top">
   </ul>
@@ -106,6 +108,8 @@ function goBack() {
   <h3 class="w3-text-indigo"><img src = "/images/megraph.png" class ="img"> 
 </h3>
   </div>
+
+
   <ul class="w3-ul w3-border-top">
   </ul>
 </div>
@@ -148,4 +152,4 @@ function goBack() {
     <script type="text/javascript" src="js/keyboard.js"></script>
 
   </body>
-</html>
+</html>  
