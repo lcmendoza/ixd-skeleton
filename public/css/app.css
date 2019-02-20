@@ -1,7 +1,4 @@
-body {
-  background-color: #FFFFFF;
-  padding: 20px;
-  margin: 0;
+
 }
 h1, h2, p, ul, li {
   font-family: sans-serif;
@@ -43,23 +40,9 @@ h1{
   font-weight: bold;
 }
 
-.col-sm-3{
-  text-align:center;
-}
-.menu{
-  position: center;
-  background: none;
-  background-color: #DB8A74;
-  width : 100%;
-  height: 150px;
-}
 
-.menu h3{
-  color: #ffffff;
-   align-content: center;
-   text-align: center;
-   padding: 30px;
-}
+
+
 ul {
   list-style-type: none;
   margin: 0;
@@ -80,13 +63,7 @@ li a {
   text-decoration: none;
 }
 
-li a:hover:not(.active) {
-  background-color: #111;
-}
 
-.active {
-  background-color: #4CAF50;
-}
 
 ul.footer {
     background-color: #DB8A74;
@@ -117,10 +94,7 @@ ul.pretty li a {
   padding: 0;
   margin: 0;
 }
-.content li {
-  margin-bottom: 10px;
-  color: #DB8A74;
-}
+
 table {
   border-collapse: collapse;
   width: 100%;
@@ -241,22 +215,21 @@ i{
 .mobile-app-icon-bar {
   list-style-type: none;
   padding-left:0;
+  padding-top: 0px;
+  padding-bottom: 10px;
   margin-bottom: 0;
   margin-top: 0;
   background-color: #DB8A74;
 position: fixed;
   bottom: 0;
   align-content: center;
-  width:100%;
+  width:400px;
 }
 
-.mobile-app-icon-bar i {
- padding-left: 4px;
-}
+
 .mobile-app-icon-bar ul li {
   display: inline-block;
-  padding: 0px 1px 3px;
-   height: 60px;
+   height: 70px;
   width: 25%;
   text-align: center;
   font-size: 10px;
@@ -265,13 +238,7 @@ position: fixed;
 .mobile-app-icon-bar p{
   color : #FFFFFF;
   font-size: 11px;
-   padding-left: 4px;
 } 
-.mobile-app-icon-bar button {
-  background-color: #DB8A74;
-  padding: 12.5px;
-  cursor: pointer;
-}
 
 .thumbnail {
   width: 100%;
