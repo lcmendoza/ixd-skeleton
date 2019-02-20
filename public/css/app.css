@@ -261,6 +261,7 @@ position: fixed;
 }
 .mobile-app-icon-bar p{
   color : #FFFFFF;
+  font-size: 10px;
 } 
 .mobile-app-icon-bar button {
   background-color: #DB8A74;
