@@ -16,12 +16,7 @@
  <body>
 <div class ="w3-row-padding">
 <header class="w3-container" style="background-color:#DB8A74" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
-  <script>
-function goBack() {
-  window.history.back();
-}
-</script> 
+
   <div class="w3-center">
   <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">Home</h1>
     <div class="w3-padding-32">
@@ -94,7 +89,12 @@ function goBack() {
 </div>
 
 
-
+ <div class="mobile-app-icon-bar">
+  <button class = "button button1"><a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> </a></button>
+  <button class = "button button1"><a href ="/index"><i class="fas fa-user" aria-hidden="true"></i></a></button>
+  <button class = "button button1"><a href ="add/add"><i class="fas fa-plus-square" aria-hidden="true"></i></a></button>
+  <button class = "button button1"><a href ="/settings"><i class="fa fa-cog" aria-hidden="true"></i></a></button>
+</div>
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
@@ -103,7 +103,8 @@ function goBack() {
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/project.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-<script type="text/javascript" src="js/keyboard.js"></script>
+
+    <script type="text/javascript" src="js/keyboard.js"></script>
 
   </body>
 </html>
