@@ -227,6 +227,7 @@ li a {
 li a:hover:not(.active) {
   background-color: #111;
 }
+
 @media (max-width: 600px) {
   .column.side, .column.middle {
     width: 100%;
