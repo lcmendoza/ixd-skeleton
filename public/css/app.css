@@ -250,18 +250,22 @@ position: fixed;
   width:100%;
 }
 
+.mobile-app-icon-bar i {
+ padding-left: 4px;
+}
 .mobile-app-icon-bar ul li {
   display: inline-block;
-  padding: 5px 0 3px;
-   height: 65px;
+  padding: 0px 1px 3px;
+   height: 60px;
   width: 25%;
   text-align: center;
-  font-size: 12px;
+  font-size: 10px;
   background-color: #DB8A74;
 }
 .mobile-app-icon-bar p{
   color : #FFFFFF;
-  font-size: 10px;
+  font-size: 11px;
+   padding-left: 4px;
 } 
 .mobile-app-icon-bar button {
   background-color: #DB8A74;
