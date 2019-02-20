@@ -226,9 +226,10 @@ h3{
 
 i{
   color: #ffffff;
-  font-size: 50px;
+  font-size: 30px;
    align-content: center;
    text-align: center;
+
 
 }
 
@@ -246,7 +247,7 @@ position: fixed;
 
 .mobile-app-icon-bar ul li {
   display: inline-block;
-  padding: 10px 0 8px;
+  padding: 5px 0 3px;
   width: 25%;
   text-align: center;
   font-size: 12px;
