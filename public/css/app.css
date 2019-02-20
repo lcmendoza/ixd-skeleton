@@ -148,6 +148,11 @@ h2 {
   width: 50%;
 }
 
+#login-header {
+  width: 100%;
+  clear: both;
+}
+
 .button {
   font-family: sans-serif;
   background-color: #FFFFFF; 
