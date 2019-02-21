@@ -80,14 +80,14 @@ th, td {
   cursor: not-allowed;}
 
   .button3 {
- border-radius: 12px;
   padding: 5px 100px;
-  background-color: #FFFFFF;
   height: 100px;
+  border-color: #DB8A74;
+  background-color:#DB8A74;
   font-family: sans-serif;
   text-align: center;
   color: #FFFFFF;
-  cursor: not-allowed;}
+ }
 
   .img{
     height:100%;
