@@ -36,5 +36,4 @@ function statusChangeCallback(response) {
 
 function changeUser(response) {
   console.log(response);
-  window.location.href = "url";
 }
