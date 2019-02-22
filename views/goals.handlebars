@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Add Friends</title>
+    <title>Goals</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
      <link href= "/css/home.css" rel="stylesheet">
+          <link href= "/css/goals.css" rel="stylesheet">
      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
@@ -15,54 +16,80 @@
 
 
   </head>
- <body>
+ <body style = "padding-top:0px">
 <div class ="w3-row-padding">
+
+
 <header class="w3-container" style="background-color:#DB8A74; padding-top:10px;" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
+
+<i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
+
+
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">Add Friends</h1>
+ <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; align-content: center">Health Goals
+   <i onclick="document.getElementById('id01').style.display='block'" 
+   class="fas fa-info-circle" style="color:white"> </i> 
+  </h1>
     <div class="w3-padding-32">
 
     </div>
   </div>
 </header>
+<div id="id01" class="w3-modal">
+    <div class="w3-modal-content w3-card-4 w3-animate-top">
+      <header class="w3-container w3-theme-l1"  style="background-color:#DB8A74" > 
+         <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white" align="center">Help</h1>
+        <span onclick="document.getElementById('id01').style.display='none'"
+        class="w3-button w3-display-topright">×</span>
+      </header>
+    <div class="w3-container" style="background-color:white"> 
+      <h4 style="color: #000000">
+        • Set out goals to improve your emotional and physical health levels! <br><br>
+        • Set goals as well to remind yourself to be helpful and supportive to friends and family as well!<br><br>
+      </h4></div>
+</div>
 </div>
 
+
+</div>
+</div>
+</div>
 <div class="w3-row-padding">
-<div class="w3-col">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Search</h3>
-  </div>
-   <div class="w3-container">
-  </div>
-  
-  <div class="w3-container">
- <form id="addFriendForm" role="form" method="get" action="/addFriend">
-        <div class= "form-group">
-          <br> <br>
-          <label for="name">Username:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
-        </div>
-         <input type="submit" id="submitBtn" class="btn btn-default" value="Add friend"></input>
-    </form>
-<br> <br>
-  </div>
-  <ul class="w3-ul w3-border-top">
-    {{# each friends}}
-       <div class="w3-container">
-    <h3 style="color:black; text-align: center"> <img src="images/{{this.image}}" class ="img" style ="height:15%; width:15%; float:left">{{this.Username}} </h3>
+  <div class ="activity">
+      <input type="text" placeholder="What do you want to do?" id="item">
+      <button id="add">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
+      </button>
     </div>
-    {{/each}}
-  </ul>
- 
+
+    <div class="container">
+      <ul class="todo" id="todo"></ul>
+      <ul class="todo" id="completed"></ul>
+      <br> <br> 
+      <br>
+    </div>
+    <div class ="container">
+    </div>
+<h1> </h1>
+<h1> </h1>
+<br> <br>
+<br> <br>
+<br> <br>
+    <!-- JavaScripts -->
+    <script src="resources/js/main.js"></script>
+  </body>
+  <ul class="w3-ul w3-border-top">
+       <div class="w3-container">
 </div>
 </div>
+<br> <br> 
+<br> <br>
+<br> <br> 
 <div class="w3-twothird">
 <div class="w3-card white">
   <ul class="w3-ul w3-border-top">
@@ -101,7 +128,7 @@ function goBack() {
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/project.js"></script>
+    <script src="/js/goals.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
 
 
