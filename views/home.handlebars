@@ -65,7 +65,7 @@
      </div>
       <div class="p-image">
        <i class="fa fa-camera upload-button" style= "color:gray"> <p>Change Avatar </p></i>
-        <input class="file-upload" style="display:none" type="file" accept="image/*">
+        <input class="file-upload" style="display:none" type="file" accept="/images/*">
         <br> <br>
      </div>
   </div>
@@ -205,7 +205,7 @@ var myChart = new Chart(ctx, {
 
 
     var readURL = function (input) {
-        if (input.files && input.files[2]) {
+        if (input.files && input.files[0]) {
             var reader = new FileReader();
 
             reader.onload = function (e) {
