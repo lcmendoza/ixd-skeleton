@@ -1,9 +1,24 @@
+ function verify(){
+        FB.init({
+                appId:"app_id",
+                status:true,
+                cookie:true,
+                xfbml:true
+                }
+
+        );
+
 function checkLoginState() {
   FB.getLoginStatus(function(response) {
-    statusChangeCallback(response);
-  });
-}
-
+    if(response.session){
+                         top.location.href="url to your app home page";
+                    }
+                    else{
+                         top.location.href="https://www.facebook.com/dialog/oauth?client_id=APP_ID&redirect_uri=redirect_url&scope=email,read_stream";
+                     }
+        })
+    }
+        verify();
 function statusChangeCallback(response) {
   console.log('Facebook login status changed.');
   console.log(response);
@@ -17,4 +32,9 @@ function statusChangeCallback(response) {
     console.log('Successfully logged in with Facebook');
     FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
   }
+}
+
+function changeUser(response) {
+  console.log(response);
+  window.location.href = "url";
 }
