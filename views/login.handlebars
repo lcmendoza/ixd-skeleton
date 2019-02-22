@@ -3,17 +3,19 @@
 <html>
 <head>
   <title>Moood | Login</title>
-   <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<link href="css/bootstrap.min.css" rel="stylesheet">
-<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-<link href="css/app.css" rel="stylesheet">
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="scss/app.scss">
-<script src="/js/facebook.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link href="css/bootstrap.min.css" rel="stylesheet">
+      <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+      <link href="css/app.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link rel="stylesheet" href="scss/app.scss">
+    {{> facebook}}
+    <script src="/js/facebook.js"></script>
 </head>
+
 <body>
 
 <div class ="w3-row-padding">
@@ -21,11 +23,9 @@
 
 <header class="w3-container" style="background-color:#DB8A74; padding-top:10px;">
   <div class="w3-center">
- <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; align-content: center"> Moood
-  </h1>
-    <div class="w3-padding-32">
-
-    </div>
+    <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; align-content: center"> Moood
+      </h1>
+    <div class="w3-padding-32"></div>
   </div>
 </header>
 
@@ -40,14 +40,16 @@
 
     <label for="pw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="pw" required>
-      <br> <br>
+
+    <br> <br>
     <button type="submit" style = "color:#DB8A74">Login</button>
     <br> <br>
-<p class="facebookLogin">Please login through Facebook
-      <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-      </fb:login-button>
 
-      </p>
+<p class="facebookLogin">
+  Please login through Facebook
+      <fb:login-button scope="public_profile, email" onlogin="checkLoginState();">
+      </fb:login-button>
+</p>
 
 </form>
 
