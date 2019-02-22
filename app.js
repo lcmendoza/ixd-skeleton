@@ -43,7 +43,7 @@ app.get('/', login.viewLogin);
 app.get('/index', index.view);
 app.get('/project/:name', project.viewProject);
 app.get('/home', home.viewHome);
-app.get('/add/:name', add.viewAdd);
+app.get('/add', add.viewAdd);
 app.get('/addFriend', addFriend.addFriend);
 app.get('/settings', settings.viewSettings);
 // Example route
