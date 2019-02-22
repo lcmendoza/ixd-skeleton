@@ -1,9 +1,9 @@
 
-var data = require("../data.json");
+var data = require("../data1.json");
 
 exports.addFriend = function(request, response) {    
-	newfriend = {'image':'playfulemoji.png','name': request.query.name,'description':request.query.description, 'date':'1/15/19 11:25 AM'};
-	console.log(newfriend);
-	data.friends.push(newfriend);
+    json = {'image':'playfulemoji.png','Username': request.query.name, 'date':'1/15/19 11:25 AM'};
+	console.log(json);
+	data.friends.push(json);
 	response.render('add', data);
  }

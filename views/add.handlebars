@@ -36,7 +36,7 @@ function goBack() {
 <div class="w3-col">
 <div class="w3-card white">
   <div class="w3-container" style="background-color:#fbefef">
-    <h3> Your username: MoodxD</h3>
+    <h3 style ="font-size:20px"> Your username: mainMood</h3>
   </div>
    <div class="w3-container">
   </div>
@@ -54,16 +54,22 @@ function goBack() {
   </div>
   
   <div class="w3-container">
- <form id="addFriendForm" role="form" method="get" action="/add">
+ <form id="addFriendForm" role="form" method="get" action="/addFriend">
         <div class= "form-group">
+          <br> <br>
           <label for="name">Username:</label>
           <input type="text" class="form-control" id="name" placeholder="Name" name="name">
         </div>
+         <input type="submit" id="submitBtn" class="btn btn-default" value="Add friend"></input>
     </form>
-
+<br> <br>
   </div>
   <ul class="w3-ul w3-border-top">
-   
+    {{# each friends}}
+       <div class="w3-container">
+    <h3 style="color:black; text-align: center"> <img src="images/{{this.image}}" class ="img" style ="height:15%; width:15%; float:left">{{this.Username}} </h3>
+    </div>
+    {{/each}}
   </ul>
  
 </div>
@@ -75,6 +81,9 @@ function goBack() {
 </div>
 </div>
 </div>
+<br> <br>
+<br> <br>
+
 <div class = "row">
 <div class="mobile-app-icon-bar" style = "right:0px; height:60px ">
   <ul>
@@ -84,7 +93,7 @@ function goBack() {
   <li> <a href ="/index"><i class="fas fa-user" aria-hidden="true"></i>
     <p class ="no-margin"> Chat List </p></a>
   </li>
- <li> <a href ="add/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
+ <li> <a href ="/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
   <p class ="no-margin"> Add Friends </p> </a>
 </li>
  <li><a href ="/settings"><i class="fa fa-cog" aria-hidden="true"></i>

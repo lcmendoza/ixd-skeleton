@@ -1,0 +1,25 @@
+
+{
+	"friends": [
+		{
+			"Username": "melissaty",
+			"image":"sademoji.png",
+			"date": "10/19/18"			
+		},
+		{
+			"Username": "mtwin",
+			"image":"playfulemoji.png",
+			"date": "10/10/18"			
+		},
+		{
+			"Username": "tinaly",
+			"image":"playfulemoji.png",
+			"date": "10/05/18"	
+		},
+		{
+			"Username": "sandrewton",
+			"image":"playfulemoji.png",
+			"date": "10/05/18"	
+		}
+	]
+}
