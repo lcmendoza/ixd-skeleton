@@ -3,22 +3,22 @@
 	"friends": [
 		{
 			"Username": "melissaty",
-			"image":"sademoji.png",
+			"image":"Sad.png",
 			"date": "10/19/18"			
 		},
 		{
 			"Username": "mtwin",
-			"image":"playfulemoji.png",
+			"image":"Happy.png",
 			"date": "10/10/18"			
 		},
 		{
 			"Username": "tinaly",
-			"image":"playfulemoji.png",
+			"image":"Happy.png",
 			"date": "10/05/18"	
 		},
 		{
 			"Username": "sandrewton",
-			"image":"playfulemoji.png",
+			"image":"Happy.png",
 			"date": "10/05/18"	
 		}
 	]
