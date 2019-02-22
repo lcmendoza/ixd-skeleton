@@ -1,0 +1,29 @@
+
+{
+	"goals": [
+		{
+			"Goal": "10 minutes of meditation",
+			"Goal Type":"Self-care",
+			"Frequency":"Daily",
+			"Date set": "10/19/18"			
+		},
+		{
+			"Goal": "10 minutes of meditation",
+			"Goal Type":"Self-care",
+			"Frequency":"Daily",
+			"Date set": "10/19/18"			
+		},
+		{
+			"Goal": "10 minutes of meditation",
+			"Goal Type":"Self-care",
+			"Frequency":"Daily",
+			"Date set": "10/19/18"	
+		},
+		{
+			"Goal": "10 minutes of meditation",
+			"Goal Type":"Self-care",
+			"Frequency":"Daily",
+			"Date set": "10/19/18"	
+		}
+	]
+}

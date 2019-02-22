@@ -139,10 +139,10 @@ body {
 
 .mobile-app-icon-bar ul li {
   display: inline-block;
-  width: 25%;
+  width: 20%;
     padding: 0px 0 0px;
   text-align: center;
-  height: 70px;
+  height: 80px;
   background-color: #DB8A74;
 }
 .mobile-app-icon-bar p{
