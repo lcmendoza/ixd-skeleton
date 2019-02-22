@@ -36,8 +36,7 @@ function goBack() {
 <div class="w3-col">
 <div class="w3-card white">
   <div class="w3-container" style="background-color:#fbefef">
-    <h3 style ="font-size:20px"> Your username: mainMood</h3>
-  </div>
+    <h3 style ="font-size:20px">Your username: mainMood</h3></div>
    <div class="w3-container">
   </div>
 
@@ -50,20 +49,21 @@ function goBack() {
 <div class="w3-col">
 <div class="w3-card white">
   
-   <form id="changenameForm" role="form" method="get" action="/changeName">
+   <form id="changenameForm" role="form" method="get" action="/settings">
   <div class="w3-container" style="background-color:#fbefef">
     <h3>Change Username</h3>
   </div>
   <div class="container">
         <br> <br>
     <label for="name"><b>Old Username</b></label>
-    <input type="text" placeholder="Enter current username" name="old-name" required>
+    <input type="text" placeholder="Enter current username" name="oldName" required>
     <br><br>
 
     <label for="name"><b>New Username</b></label>
-    <input type="text" placeholder="Enter new username" name="new-name" required>
+    <input type="text" placeholder="Enter new username" name="newName" required>
     <br><br>
-   <input type="submit" id="submitBtn" class="btn btn-default" value="OK!"></input>
+    <input type="submit" id="submitBtn" class="btn btn-default" value="OK!"></input>
+    </form>
    <br><br>
   </div>
   <ul class="w3-ul w3-border-top">
@@ -80,6 +80,9 @@ function goBack() {
   <div class="w3-container" style="background-color:#fbefef">
        <h3>Change Email & Password</h3>
   </div>
+     
+
+    <form id="changenameForm" role="form" method="get" action="/settings">
      <div class="container">
           <br> <br>
     <label for="email"><b>Email</b></label>
@@ -90,7 +93,7 @@ function goBack() {
     <label for="pw"><b>Password</b></label>
     <input type="password" placeholder="Enter Password" name="pw" required>
     <br> <br>
-   <input type="submit" id="submitBtn" class="btn btn-default" value="Ok!"></input>
+   <input type="submit" id="submitBtn" class="btn btn-default" value="OK!"></input>
        <br> <br>
   </div>
  
