@@ -191,7 +191,7 @@ body {
 
 .message.sent:after {
   border-width: 0px 0 10px 10px;
-  border-color: transparent transparent transparent #e1ffc7;
+  border-color: transparent transparent transparent #fbefef;
   top: 0;
   right: -10px;
 }
