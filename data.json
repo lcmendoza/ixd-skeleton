@@ -1,17 +1,17 @@
 {
 	"projects": [
 
-		{	"image":"sademoji.png",
+		{	"image":"Sad.png",
 			"name": "Bob",
 			"date": "2/1/19 6:30PM",
 			"id": "chat1"
 		},
-		{	"image":"playfulemoji.png",
+		{	"image":"Excited.png",
 			"name": "Cathy",
 			"date": "1/31/19 12:00PM",
 			"id": "chat2"
 		},
-		{	"image":"joyemoji.png",
+		{	"image":"Bored.png",
 			"name": "Sam",
 			"date": "1/30/19 9:00PM",
 			"id": "chat3"
