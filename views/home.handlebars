@@ -1,399 +1,421 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-      <link href= "/css/home.css" rel="stylesheet">
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-    <!-- Google Analytics -->
-    <script>
-    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/home.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+  <!-- Google Analytics -->
+  <script>
+    (function (i, s, o, g, r, a, m) {
+    i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+      (i[r].q = i[r].q || []).push(arguments)
+    }, i[r].l = 1 * new Date(); a = s.createElement(o),
+      m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
 
     ga('create', 'UA-135175651-1', 'auto');
     ga('send', 'pageview');
-    </script>
-    <!-- End Google Analytics -->
+  </script>
+  <!-- End Google Analytics -->
 
-  </head>
- <body>
-<div class ="w3-row-padding">
+</head>
+
+<body>
+  <div class="w3-row-padding">
 
 
-<header class="w3-container" style="background-color:#DB8A74; padding-top:10px;" >
+    <header class="w3-container" style="background-color:#DB8A74; padding-top:10px;">
 
- <!-- <a href ="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+      <!-- <a href ="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
   <p class ="no-margin" style ="color: white"> Logout </p></a> -->
 
 
-  <div class="w3-center">
- <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; align-content: center">Home
-   <i onclick="document.getElementById('id01').style.display='block'" 
-   class="fas fa-info-circle" style="color:white"> </i> 
-  </h1>
-    <div class="w3-padding-32">
+      <div class="w3-center">
+        <h1 class="w3-xxxlarge w3-animate-bottom" style="color:white; align-content: center">Home
+          <i onclick="document.getElementById('id01').style.display='block'" class="fas fa-info-circle"
+            style="color:white"> </i>
+        </h1>
+        <div class="w3-padding-32">
 
+        </div>
+      </div>
+    </header>
+    <div id="id01" class="w3-modal">
+      <div class="w3-modal-content w3-card-4 w3-animate-top">
+        <header class="w3-container w3-theme-l1" style="background-color:#DB8A74">
+          <h1 class="w3-xxxlarge w3-animate-bottom" style="color:white" align="center">Help</h1>
+          <span onclick="document.getElementById('id01').style.display='none'"
+            class="w3-button w3-display-topright">×</span>
+        </header>
+        <div class="w3-container" style="background-color:white">
+          <h4 style="color: #000000">
+            • Customize your avatar based on how you are feeling today!<br><br>
+            • Write out any thoughts you have about your feelings and let your friends know how you are doing.<br><br>
+            • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are
+            feeling!<br><br>
+            • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can
+            compare how you were feeling today versus three days ago!<br>
+
+
+          </h4>
+        </div>
+      </div>
     </div>
-  </div>
-</header>
-<div id="id01" class="w3-modal">
-    <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"  style="background-color:#DB8A74" > 
-         <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white" align="center">Help</h1>
-        <span onclick="document.getElementById('id01').style.display='none'"
-        class="w3-button w3-display-topright">×</span>
-      </header>
-    <div class="w3-container" style="background-color:white"> 
-      <h4 style="color: #000000">
-        • Customize your avatar based on how you are feeling today!<br><br>
-        • Write out any thoughts you have about your feelings and let your friends know how you are doing.<br><br>
-        • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are feeling!<br><br>
-        • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can compare how you were feeling today versus three days ago!<br>
+    <!--Altcode right here/ B testing -->
+    {{#if viewHomeAlt}}
+    <div class="w3-row-padding">
+      <div class="w3-third">
+        <div class="w3-card white">
+          <div class="w3-container" style="background-color:#fbefef">
+            <h3>You/Your Avatar</h3>
+          </div>
+          <div class="w3-container" style="background-color:white">
+
+            <div class="circle"><br><br>
+              <img class="profile-pic" src="/images/Happy.png">
+            </div>
 
 
-      </h4></div>
-</div>
-</div>
-<!--Altcode right here/ B testing -->
-{{#if viewHomeAlt}}
-<div class="w3-row-padding">
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>You/Your Avatar</h3>
-  </div>
-  <div class="w3-container" style = "background-color:white">
-    
-   <div class = "circle"><br><br>      
-         <img class="profile-pic" src="/images/Happy.png">
-       </div>
+            <br><br>
+            <div class="p-image" align="center">
+              <i class="fa fa-camera upload-button" style="color:gray">
+                <p>Change Avatar </p>
+              </i>
+              <input class="file-upload" style="display:none" type="file" accept="/images/*">
+              <br> <br>
+            </div>
+          </div>
+        </div>
+      </div>
 
 
-       <br><br>
-        <div class="p-image" align="center">
-         <i class="fa fa-camera upload-button" style= "color:gray"> <p>Change Avatar </p></i>
-          <input class="file-upload" style="display:none" type="file" accept="/images/*">
-          <br> <br>
-       </div>
-    </div>
-  </div>
-    </div>
+      <div class="w3-third">
+        <div class="w3-card white">
+          <div class="w3-container" style="background-color:#fbefef">
+            <h3>Health Status Journal</h3>
+          </div>
+          <div class="w3-container">
+            <h3 class="w3-text-theme">
+              <textarea rows="4px">Write your thoughts here! </textarea></h3>
+
+          </div>
+
+          <ul class="w3-ul w3-border-top">
+          </ul>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card white">
+          <div class="w3-container" style="background-color:#fbefef">
+            <h3>Reminder of the Day</h3>
+          </div>
+          <div class="w3-container">
+            <h3 class="w3-text">
+              <span id="random"></span>
+            </h3>
+            <ul class="w3-ul w3-border-top">
+
+            </ul>
+
+          </div>
+        </div>
+      </div>
+      {{else}}
+      <div class="w3-row-padding">
+        <div class="w3-third">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>You/Your Avatar</h3>
+            </div>
+            <div class="w3-container" style="background-color:white">
+
+              <div class="circle"><br><br>
+                <img class="profile-pic" src="/images/Happy.png">
+              </div>
 
 
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Health Status Journal</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text-theme">
-    <textarea rows="4px" >Write your thoughts here! </textarea></h3>
-
-</div>
-
-  <ul class="w3-ul w3-border-top">
-  </ul>
-</div>
-</div>
-
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Reminder of the Day</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text">
-     <span id="random"></span>
-</h3>
-  <ul class="w3-ul w3-border-top">
-   
-  </ul>
-
-</div>
-</div>
-</div>
-{{else}}
-<div class="w3-row-padding">
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>You/Your Avatar</h3>
-  </div>
-  <div class="w3-container" style = "background-color:white">
-    
-   <div class = "circle"><br><br>      
-         <img class="profile-pic" src="/images/Happy.png">
-       </div>
+              <br><br><br>
+              <div class="p-image" align="center">
+                <i class="fa fa-camera upload-button" style="color:gray">
+                  <p>Change Avatar </p>
+                </i>
+                <input class="file-upload" style="display:none" type="file" accept="/images/*">
+                <br><br>
+              </div>
+            </div>
+          </div>
+        </div>
 
 
-       <br><br><br>
-        <div class="p-image" align="center">
-         <i class="fa fa-camera upload-button" style= "color:gray"> <p>Change Avatar </p></i>
-          <input class="file-upload" style="display:none" type="file" accept="/images/*">
-          <br><br>
-       </div>
-    </div>
-  </div>
-    </div>
+        <div class="w3-third">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>Health Status Journal</h3>
+            </div>
+            <div class="w3-container">
+              <h3 class="w3-text-theme">
+                <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
 
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Health Status Journal</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text-theme">
-    <textarea rows="4px" >Write your thoughts here! </textarea></h3>
-
-     
-<style>
-.overlay {
-  height: 100%;
-  width: 100%;
-  display: none;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #DB8A74;
-  opacity: 0.95;
-}
-
-.overlay-content {
-  position: relative;
-  top: 25%;
-  width: 100%;
-  text-align: center;
-  margin-top: 30px;
-}
-
-.overlay a {
-  padding: 15px;
-  text-decoration: none;
-  font-size: 20px;
-  color: #DB8A74;
-  display: block;
-  transition: 0.3s;
-}
-
-.overlay a:hover, .overlay a:focus {
-  color: #ffffff;
-}
-
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 20px}
-}
-
-
-.button {
-        background-color: #DB8A74;
-        border: none;
-        color: white;
-        height: 65px; 
-        width: 35%;
-        text-align: center;
-        font-size: 16px;
-        font-family: verdana;
-        cursor: pointer;
-       }
-       
-.button2 {
-        background-color: #ffd2c6;
-        border: none;
-        color: white;
-        height: 60px; 
-        width: 35%;
-        text-align: center;
-        font-size: 12px;
-        font-family: verdana;
-        margin-left: auto;
-        margin-right: auto;
-        cursor: pointer;
-       }
-
-</style>
-
-<div id="journalMsg" class="overlay">
-  <div class="overlay-content">
-    <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
-    Be sure to check up on your friends as well as yourself!</h3>
-    <br>
-    <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
-
-</div>
-</div>
-
-<center><button class="button" onclick="openMsg()">OK!</a></button></center>
-
-<script>
-function openMsg() {
-  document.getElementById("journalMsg").style.display = "block";
-}
-
-function closeMsg() {
-  document.getElementById("journalMsg").style.display = "none";
-}
-</script>
-
-     <br><br>
-
-</div>
-
-  <ul class="w3-ul w3-border-top">
-  </ul>
-</div>
-</div>
-<div class="w3-third">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Reminder of the Day</h3>
-  </div>
-  <div class="w3-container">
-  <h3 class="w3-text"> Remember to love yourself!
-</h3>
-  <ul class="w3-ul w3-border-top">
-   
-  </ul>
-
-</div>
-</div>
-</div>
-{{/if}}
-
-<div class="w3-col">
-<div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Real-time Graph</h3>
-  </div>
-  <div class="w3-container">
-  <div class="w3-container">
-  <h3 class="w3-text-indigo"> <canvas id="myChart" style ="width:200px; height:200px"></canvas>
-<script>
-var ctx = document.getElementById("myChart").getContext('2d');
-var myChart = new Chart(ctx, {
-    type: 'line',
-    data: {
-        labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
-        datasets: [{
-            label: 'Tracker of Happiness Points',
-            data: [80, 60, 85, 70, 55, 90],
-            backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
-            ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 1
-        }]
-    },
-    options: {
-        scales: {
-            yAxes: [{
-                ticks: {
-                    beginAtZero:true
+              <style>
+                .overlay {
+                  height: 100%;
+                  width: 100%;
+                  display: none;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  background-color: #DB8A74;
+                  opacity: 0.95;
                 }
-            }]
-        }
-    }
-});
-</script>
-</h3>
+
+                .overlay-content {
+                  position: relative;
+                  top: 25%;
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 30px;
+                }
+
+                .overlay a {
+                  padding: 15px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: #DB8A74;
+                  display: block;
+                  transition: 0.3s;
+                }
+
+                .overlay a:hover,
+                .overlay a:focus {
+                  color: #ffffff;
+                }
+
+
+                @media screen and (max-height: 450px) {
+                  .overlay a {
+                    font-size: 20px
+                  }
+                }
+
+
+                .button {
+                  background-color: #DB8A74;
+                  border: none;
+                  color: white;
+                  height: 65px;
+                  width: 35%;
+                  text-align: center;
+                  font-size: 16px;
+                  font-family: verdana;
+                  cursor: pointer;
+                }
+
+                .button2 {
+                  background-color: #ffd2c6;
+                  border: none;
+                  color: white;
+                  height: 60px;
+                  width: 35%;
+                  text-align: center;
+                  font-size: 12px;
+                  font-family: verdana;
+                  margin-left: auto;
+                  margin-right: auto;
+                  cursor: pointer;
+                }
+              </style>
+
+              <div id="journalMsg" class="overlay">
+                <div class="overlay-content">
+                  <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+                    Be sure to check up on your friends as well as yourself!</h3>
+                  <br>
+                  <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
+
+                </div>
+              </div>
+
+              <center><button class="button" onclick="openMsg()">OK!</a></button></center>
+
+              <script>
+                function openMsg() {
+                  document.getElementById("journalMsg").style.display = "block";
+                }
+
+                function closeMsg() {
+                  document.getElementById("journalMsg").style.display = "none";
+                }
+              </script>
+
+              <br><br>
+
+            </div>
+
+            <ul class="w3-ul w3-border-top">
+            </ul>
+          </div>
+        </div>
+        <div class="w3-third">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>Reminder of the Day</h3>
+            </div>
+            <div class="w3-container">
+              <h3 class="w3-text"> Remember to love yourself!
+              </h3>
+              <ul class="w3-ul w3-border-top">
+
+              </ul>
+
+            </div>
+          </div>
+        </div>
+        {{/if}}
+
+        <div class="w3-col">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>Track your well-being!</h3>
+            </div>
+            <div class="w3-container">
+              <div class="w3-container">
+                <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:200px; height:200px"></canvas>
+                  <script>
+                    var ctx = document.getElementById("myChart").getContext('2d');
+                    var myChart = new Chart(ctx, {
+                      type: 'line',
+                      data: {
+                        labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
+                        datasets: [{
+                          label: 'Tracker of Happiness Points',
+                          data: [80, 60, 85, 70, 55, 90],
+                          backgroundColor: [
+                            'rgba(255, 99, 132, 0.2)',
+                            'rgba(54, 162, 235, 0.2)',
+                            'rgba(255, 206, 86, 0.2)',
+                            'rgba(75, 192, 192, 0.2)',
+                            'rgba(153, 102, 255, 0.2)',
+                            'rgba(255, 159, 64, 0.2)'
+                          ],
+                          borderColor: [
+                            'rgba(255,99,132,1)',
+                            'rgba(54, 162, 235, 1)',
+                            'rgba(255, 206, 86, 1)',
+                            'rgba(75, 192, 192, 1)',
+                            'rgba(153, 102, 255, 1)',
+                            'rgba(255, 159, 64, 1)'
+                          ],
+                          borderWidth: 1
+                        }]
+                      },
+                      options: {
+                        scales: {
+                          yAxes: [{
+                            ticks: {
+                              beginAtZero: true
+                            }
+                          }]
+                        }
+                      }
+                    });
+                  </script>
+                </h3>
+              </div>
+              <ul class="w3-ul w3-border-top">
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br> <br>
+      <br> <br>
+      <br> <br>
+
+      <div class="row">
+        <h1 style="color:white"> Hi </h1>
+        <h3> </h3>
+      </div>
+    </div>
+    <div class="mobile-app-icon-bar" style="left: 0px; position: fixed">
+      <ul>
+        <li> <a href="/home"> <i class="fas fa-home" aria-hidden="true"></i>
+            <p class="no-margin"> Home </p>
+          </a>
+        </li>
+        <li> <a href="/goals"> <i class="fas fa-tasks" aria-hidden="true"></i>
+            <p class="no-margin"> Health Goals </p>
+          </a>
+        </li>
+        <li> <a href="/index"><i class="fas fa-user" aria-hidden="true"></i>
+            <p class="no-margin"> Chat List </p>
+          </a>
+        </li>
+        <li> <a href="/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
+            <p class="no-margin"> Add Friends </p>
+          </a>
+        </li>
+        <li><a href="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
+            <p class="no-margin"> Logout </p>
+          </a>
+        </li>
+      </ul>
+    </div>
   </div>
-  <ul class="w3-ul w3-border-top">
-  </ul>
-</div>
-</div>
-</div>
-</div>
-
-<br> <br>
-<br> <br>
-<br> <br>
-
-<div class = "row">
-  <h1 style="color:white"> Hi </h1>
-  <h3> </h3>
-</div>
-</div>
-<div class="mobile-app-icon-bar" style ="left: 0px; position: fixed">
-  <ul>
-  <li>  <a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> 
-    <p class ="no-margin"> Home </p> </a>
-  </li>
-  <li>  <a href ="/goals"> <i class="fas fa-tasks" aria-hidden="true"></i> 
-    <p class ="no-margin"> Health Goals </p> </a>
-  </li>
-  <li> <a href ="/index"><i class="fas fa-user" aria-hidden="true"></i>
-    <p class ="no-margin"> Chat List </p></a>
-  </li>
- <li> <a href ="/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
-  <p class ="no-margin"> Add Friends </p> </a>
-</li>
- <li><a href ="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-  <p class ="no-margin"> Logout </p> </a>
-</li>
-</ul>
-</div>
-</div>
 
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/project.js"></script>
-    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="js/reminders.js"></script>
-    <script src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
-    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
-<script>$(document).ready(function () {
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="/js/bootstrap.min.js"></script>
+  <script src="/js/project.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="js/reminders.js"></script>
+  <script
+    src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
+  <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script>$(document).ready(function () {
 
 
-    var readURL = function (input) {
+      var readURL = function (input) {
         if (input.files && input.files[0]) {
-            var reader = new FileReader();
+          var reader = new FileReader();
 
-            reader.onload = function (e) {
-                $('.profile-pic').attr('src', e.target.result);
-            };
+          reader.onload = function (e) {
+            $('.profile-pic').attr('src', e.target.result);
+          };
 
-            reader.readAsDataURL(input.files[0]);
+          reader.readAsDataURL(input.files[0]);
         }
-    };
+      };
 
 
-    $(".file-upload").on('change', function () {
+      $(".file-upload").on('change', function () {
         readURL(this);
-    });
+      });
 
-    $(".upload-button").on('click', function () {
+      $(".upload-button").on('click', function () {
         $(".file-upload").click();
+      });
     });
-});
 
-</script>
+  </script>
 
-  </body>
-</html>  
+</body>
+
+</html>
