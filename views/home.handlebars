@@ -14,7 +14,7 @@
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
-<<<<<<< HEAD
+
     <!-- Google Analytics -->
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -115,11 +115,22 @@
           <div class="w3-container" style="background-color:#fbefef">
             <h3>You/Your Avatar</h3>
           </div>
-          <div class="w3-container" style="background-color:white">
 
-            <div class="circle"><br><br>
-              <img class="profile-pic" src="/images/Happy.png" align="center">
-            </div>
+          <div class="w3-container" style="background-color:white" align="center">
+              <br>
+              <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
+              <option value="/images/Happy.png" selected>Happy</option>
+              <option value="/images/Sad.png">Sad</option>
+              <option value="/images/Bored.png">Bored</option>
+              <option value="/images/Excited.png">Excited</option>
+              <option value="/images/Angry.png">Angry</option>
+              <option value="/images/Annoyed.png">Annoyed</option>
+              <option value="/images/Nervous.png">Afraid</option>
+              </select>
+            
+            <br><br>
+
+            <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
 
 
             <br><br>
@@ -268,12 +279,11 @@
             </div>
             <div class="w3-container" style="background-color:white">
 
-              <div class="circle"><br><br>
-                <img class="profile-pic" src="/images/Happy.png" align="center">
-              </div>
-
-
-              <br><br><br>
+            <div class="circle" align="center"><br><br>
+              <img class="profile-pic" src="/images/Happy.png">
+            </div>
+               
+              <br><br>
               <div class="p-image" align="center">
                 <i class="fa fa-camera upload-button" style="color:gray">
                   <p>Change Avatar </p>
@@ -295,6 +305,9 @@
               <h3 class="w3-text-theme">
                 <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
+                </div>
+              </div>
+            </div>
 
               <!-- <style>
                 .overlay {
@@ -365,7 +378,7 @@
                   cursor: pointer;
                 }
               </style>
-<<<<<<< HEAD
+
 
               <div id="journalMsg" class="overlay">
                 <div class="overlay-content">
@@ -391,11 +404,11 @@
 
               <br><br>
 
-=======
->>>>>>> 58758d80a5756e4d80e7557956fb0cfb85e176e2
-            </div>
+
+  
 {{/if}}
-        <div class="w3-col">
+
+        <div class="w3-row-padding">
           <div class="w3-card white">
             <div class="w3-container" style="background-color:#fbefef">
               <h3>Track your well-being!</h3>
