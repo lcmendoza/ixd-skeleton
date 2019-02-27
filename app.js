@@ -50,6 +50,7 @@ app.get('/addFriend', addFriend.addFriend);
 app.get('/settings', settings.viewSettings);
 app.get('/goals', goals.viewGoals);
 app.get('/addGoals',addGoals.addGoals);
+app.get('/viewHomeAlt', home.viewHomeAlt);
 // Example route
 // app.get('/users', user.list);
 

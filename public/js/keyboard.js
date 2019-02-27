@@ -6,7 +6,8 @@ var random = document.querySelector('#random');
 
 random.innerHTML = help[Math.floor(Math.random() * help.length)];
 
-/* Time */
+
+
 
 var deviceTime = document.querySelector('.status-bar .time');
 var messageTime = document.querySelectorAll('.message .time');
@@ -21,7 +22,7 @@ for (var i = 0; i < messageTime.length; i++) {
   messageTime[i].innerHTML = moment().format('h:mm A');
 }
 
-/* Message */
+
 
 var form = document.querySelector('.conversation-compose');
 var conversation = document.querySelector('.conversation-container');
