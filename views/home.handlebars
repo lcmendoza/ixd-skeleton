@@ -34,14 +34,8 @@
 <body>
   <div class="w3-row-padding">
 
-
-<<<<<<< HEAD
-=======
     <header class="w3-container" style="background-color:#DB8A74; padding-top:10px;">
 
-      <!-- <a href ="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-  <p class ="no-margin" style ="color: white"> Logout </p></a> -->
->>>>>>> fc7d43d4949c0121278ac7223a36963baecf98e6
 
 
       <div class="w3-center">
@@ -103,16 +97,112 @@
       </div>
 
 
-      <div class="w3-third">
-        <div class="w3-card white">
-          <div class="w3-container" style="background-color:#fbefef">
-            <h3>Health Status Journal</h3>
-          </div>
-          <div class="w3-container">
-            <h3 class="w3-text-theme">
-              <textarea rows="4px">Write your thoughts here! </textarea></h3>
+        <div class="w3-third">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>Health Status Journal</h3>
+            </div>
+            <div class="w3-container">
+              <h3 class="w3-text-theme">
+                <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
-          </div>
+
+              <style>
+                .overlay {
+                  height: 100%;
+                  width: 100%;
+                  display: none;
+                  position: fixed;
+                  z-index: 1;
+                  top: 0;
+                  left: 0;
+                  background-color: #DB8A74;
+                  opacity: 0.95;
+                }
+
+                .overlay-content {
+                  position: relative;
+                  top: 25%;
+                  width: 100%;
+                  text-align: center;
+                  margin-top: 30px;
+                }
+
+                .overlay a {
+                  padding: 15px;
+                  text-decoration: none;
+                  font-size: 20px;
+                  color: #DB8A74;
+                  display: block;
+                  transition: 0.3s;
+                }
+
+                .overlay a:hover,
+                .overlay a:focus {
+                  color: #ffffff;
+                }
+
+
+                @media screen and (max-height: 450px) {
+                  .overlay a {
+                    font-size: 20px
+                  }
+                }
+
+
+                .button {
+                  background-color: #DB8A74;
+                  border: none;
+                  color: white;
+                  height: 65px;
+                  width: 35%;
+                  text-align: center;
+                  font-size: 16px;
+                  font-family: verdana;
+                  cursor: pointer;
+                }
+
+                .button2 {
+                  background-color: #ffd2c6;
+                  border: none;
+                  color: white;
+                  height: 60px;
+                  width: 35%;
+                  text-align: center;
+                  font-size: 12px;
+                  font-family: verdana;
+                  margin-left: auto;
+                  margin-right: auto;
+                  cursor: pointer;
+                }
+              </style>
+
+              <div id="journalMsg" class="overlay">
+                <div class="overlay-content">
+                  <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+                    Be sure to check up on your friends as well as yourself!</h3>
+                  <br>
+                  <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
+
+                </div>
+              </div>
+
+              <center><button class="button" onclick="openMsg()">OK!</a></button></center>
+
+              <script>
+                function openMsg() {
+                  document.getElementById("journalMsg").style.display = "block";
+                }
+
+                function closeMsg() {
+                  document.getElementById("journalMsg").style.display = "none";
+                }
+              </script>
+
+              <br><br>
+
+            </div>
+
 
           <ul class="w3-ul w3-border-top">
           </ul>
