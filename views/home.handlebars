@@ -43,7 +43,7 @@
       </header>
     <div class="w3-container" style="background-color:white"> 
       <h4 style="color: #000000">
-        • Customize your avatar based on how you are feeling today. There are several to choose from!<br><br>
+        • Customize your avatar based on how you are feeling today!<br><br>
         • Write out any thoughts you have about your feelings and let your friends know how you are doing.<br><br>
         • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are feeling!<br><br>
         • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can compare how you were feeling today versus three days ago!<br>
@@ -66,11 +66,11 @@
        </div>
 
 
-       <br><br>
+       <br><br><br>
         <div class="p-image" align="center">
          <i class="fa fa-camera upload-button" style= "color:gray"> <p>Change Avatar </p></i>
           <input class="file-upload" style="display:none" type="file" accept="/images/*">
-          <br> <br>
+          <br><br>
        </div>
     </div>
   </div>
@@ -85,6 +85,99 @@
   <div class="w3-container">
   <h3 class="w3-text-theme">
     <textarea rows="4px" >Write your thoughts here! </textarea></h3>
+
+     
+<style>
+.overlay {
+  height: 100%;
+  width: 100%;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #DB8A74;
+  opacity: 0.95;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 15px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #DB8A74;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #ffffff;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+}
+
+
+.button {
+        background-color: #DB8A74;
+        border: none;
+        color: white;
+        height: 65px; 
+        width: 35%;
+        text-align: center;
+        font-size: 16px;
+        font-family: verdana;
+        cursor: pointer;
+       }
+       
+.button2 {
+        background-color: #ffd2c6;
+        border: none;
+        color: white;
+        height: 60px; 
+        width: 35%;
+        text-align: center;
+        font-size: 12px;
+        font-family: verdana;
+        margin-left: auto;
+        margin-right: auto;
+        cursor: pointer;
+       }
+
+</style>
+
+<div id="journalMsg" class="overlay">
+  <div class="overlay-content">
+    <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+    Be sure to check up on your friends as well as yourself!</h3>
+    <br>
+    <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
+
+</div>
+</div>
+
+<center><button class="button" onclick="openMsg()">OK!</a></button></center>
+
+<script>
+function openMsg() {
+  document.getElementById("journalMsg").style.display = "block";
+}
+
+function closeMsg() {
+  document.getElementById("journalMsg").style.display = "none";
+}
+</script>
+
+     <br><br>
 
 </div>
 
