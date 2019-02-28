@@ -72,6 +72,7 @@
     {{#if viewHomeAlt}}
 
      <div class="w3-row-padding">
+      <div class="w3-col">
       <div class="w3-card white">
         <div class="w3-container" style="background-color:#fbefef">
           <h3>Reminder of the Day</h3>
@@ -86,7 +87,7 @@
         </div>       
   <div class ="activity">
       <input type="text" placeholder="What do you want to do?" id="item">
-      <button id="add">
+      <button id="add" class="btn btn-default likeBtn">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
       </button>
     </div>
@@ -98,13 +99,14 @@
       <br>
 </div>
 <br> <br>
-  <ul class="w3-ul w3-border-top">
+  <ul class="w3-ul w3-border-top"></ul>
        <div class="w3-container">
 </div>
         </div>
       </div>
+</div>
 
-      <div class="w3-half">
+     <div class="w3-half">
         <div class="w3-card white">
           <div class="w3-container" style="background-color:#fbefef">
             <h3>You/Your Avatar</h3>
@@ -121,23 +123,19 @@
               <option value="/images/Annoyed.png">Annoyed</option>
               <option value="/images/Nervous.png">Afraid</option>
               </select>
-            
+              <br><br>
             <br><br>
 
             <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
 
 
             <br><br>
-            <div class="p-image" align="center">
-              <i class="fa fa-camera upload-button" style="color:gray">
-                <p>Change Avatar </p>
-              </i>
-              <input class="file-upload" style="display:none" type="file" accept="/images/*">
-              <br> <br>
+            <div class="likeCtr"><button class="btn btn-default likeBtn"> Press if you made changes to your avatar</button></div>
+            <br>
             </div>
           </div>
         </div>
-      </div>
+
 
 
       <div class="w3-half">
@@ -247,12 +245,10 @@
           </div>
 
 
-          <ul class="w3-ul w3-border-top">
-          </ul>
+          <ul class="w3-ul w3-border-top"></ul>
         </div>
       </div>
-    </div>
-
+  
       {{else}}
 <div class="w3-row-padding">
       <div class="w3-col">
@@ -265,7 +261,7 @@
           <ul class="w3-ul w3-border-top"></ul>
         </div>
       </div>
-
+</div>
         <div class="w3-half">
           <div class="w3-card white">
             <div class="w3-container" style="background-color:#fbefef">
@@ -282,7 +278,9 @@
                 <i class="fa fa-camera upload-button" style="color:gray">
                   <p>Change Avatar </p>
                 </i>
-                <input class="file-upload" style="display:none" type="file" accept="/images/*">
+          <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
+          <br>
+           <button class="btn btn-default likeBtn">  Press if you made changes to your avatar</button>
                 <br><br>
               </div>
             </div>
@@ -299,9 +297,7 @@
               <h3 class="w3-text-theme">
                 <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
-                </div>
-              </div>
-            </div>
+
 
             <style>
                 .overlay {
@@ -371,12 +367,7 @@
                   margin-right: auto;
                   cursor: pointer;
                 }
-              </style>
-
-              </div>
-</div>
-</div>
-           
+              </style>    
 
         <div class="w3-col">
 
@@ -405,11 +396,12 @@
               </script> 
 
               <br><br>
-
- 
+   </div>
+              </div>
+            </div>
+ </div>
 {{/if}}
-
-        <div class="w3-row-padding">
+          <div class="w3-col">
           <div class="w3-card white">
             <div class="w3-container" style="background-color:#fbefef">
               <h3>Track your well-being!</h3>
@@ -463,7 +455,7 @@
             </div>
           </div>
         </div>
-      </div>
+
 
       <br> <br>
       <br> <br>
@@ -550,6 +542,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/reminders.js"></script>
     <script type="text/javascript" src="js/addyourown.js"></script>
+      <script type="text/javascript" src="js/buttonclick.js"></script>
   <script
     src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>

@@ -28,7 +28,10 @@ i{
 
 }
 
-
+select{
+  border-color: #DB8A74;
+  padding-left: 30px;
+}
 .header p {
      color: #6e6e6e;
 }
