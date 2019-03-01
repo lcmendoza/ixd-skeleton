@@ -120,49 +120,9 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       </div>
 </div>
 
-     <div class="w3-half">
-        <div class="w3-card white">
-          <div class="w3-container" style="background-color:#fbefef">
-            <h3>You/Your Avatar</h3>
-          </div>
-
-          <div class="w3-container" style="background-color:white" align="center">
-              <br>
-              <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
-              <option value="/images/Happy.png" selected>Happy</option>
-              <option value="/images/Sad.png">Sad</option>
-              <option value="/images/Bored.png">Bored</option>
-              <option value="/images/Excited.png">Excited</option>
-              <option value="/images/Angry.png">Angry</option>
-              <option value="/images/Annoyed.png">Annoyed</option>
-              <option value="/images/Nervous.png">Afraid</option>
-              </select>
-              <br><br>
-            <br><br>
-
-            <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
 
 
-            <br><br>
-            <div class="likeCtr"><button class="btn btn-default likeBtn"> Press if you made changes to your avatar</button></div>
-            <br>
-            </div>
-          </div>
-        </div>
-
-
-
-      <div class="w3-half">
-        <div class="w3-card white">
-          <div class="w3-container" style="background-color:#fbefef">
-            <h3>Health Status Journal</h3>
-          </div>
-          <div class="w3-container">
-            <h3 class="w3-text-theme">
-              <textarea rows="4px">Write your thoughts here! </textarea></h3>
-
-
-            <style>
+ <style>
               .overlay {
                 height: 100%;
                 width: 100%;
@@ -232,6 +192,74 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
               }
             </style>
 
+
+     <div class="w3-half">
+        <div class="w3-card white">
+          <div class="w3-container" style="background-color:#fbefef">
+            <h3>You/Your Avatar</h3>
+          </div>
+
+          <div class="w3-container" style="background-color:white" align="center">
+              <br>
+              <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
+              <option value="/images/Happy.png" selected>Happy</option>
+              <option value="/images/Sad.png">Sad</option>
+              <option value="/images/Bored.png">Bored</option>
+              <option value="/images/Excited.png">Excited</option>
+              <option value="/images/Angry.png">Angry</option>
+              <option value="/images/Annoyed.png">Annoyed</option>
+              <option value="/images/Nervous.png">Afraid</option>
+              </select>
+              <br><br>
+            <br><br>
+
+            <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
+
+
+            <br><br>
+            <div class="likeCtr"><button class="btn btn-default likeBtn" onclick="openAviMsg()"> Press if you made changes to your avatar</button></div>
+            <br>
+
+
+                <div id="avatarMsg" class="overlay">
+                <div class="overlay-content">
+                  <h3 style="color:white">Thank you for changing your avatar!<br><br>
+                    Hoping you have a good day regardless of how you feel!</h3>
+                  <br>
+                  <a href="javascript:void(0)" class="button2" onclick="closeAviMsg()">OK!</a>
+
+                </div>
+              </div>
+
+              <script>
+                function openAviMsg() {
+                  document.getElementById("avatarMsg").style.display = "block";
+                }
+
+                function closeAviMsg() {
+                  document.getElementById("avatarMsg").style.display = "none";
+                }
+              </script> 
+
+
+                <br><br>
+
+
+            </div>
+          </div>
+        </div>
+
+
+      <div class="w3-half">
+        <div class="w3-card white">
+          <div class="w3-container" style="background-color:#fbefef">
+            <h3>Health Status Journal</h3>
+          </div>
+          <div class="w3-container">
+            <h3 class="w3-text-theme">
+              <textarea rows="4px">Write your thoughts here! </textarea></h3>
+
+
             <div id="journalMsg" class="overlay">
               <div class="overlay-content">
                 <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
@@ -264,6 +292,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
       </div>
   
       {{else}}
+
 <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
@@ -276,41 +305,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
         </div>
       </div>
 </div>
-        <div class="w3-half">
-          <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
-              <h3>You/Your Avatar</h3>
-            </div>
-            <div class="w3-container" style="background-color:white">
-
-            <div class="circle" align="center"><br><br>
-              <img class="profile-pic" src="/images/Happy.png">
-            </div>
-               
-              <br><br>
-              <div class="p-image" align="center">
-                <i class="fa fa-camera upload-button" style="color:gray">
-                  <p>Change Avatar </p>
-                </i>
-          <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
-          <br>
-           <button class="btn btn-default likeBtn">  Press if you made changes to your avatar</button>
-                <br><br>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-        <div class="w3-half">
-          <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
-              <h3>Health Status Journal</h3>
-            </div>
-            <div class="w3-container">
-              <h3 class="w3-text-theme">
-                <textarea rows="4px">Write your thoughts here! </textarea></h3>
-
 
 
             <style>
@@ -356,18 +350,6 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 }
 
 
-                .button {
-                  background-color: #DB8A74;
-                  border: none;
-                  color: white;
-                  height: 65px;
-                  width: 35%;
-                  text-align: center;
-                  font-size: 16px;
-                  font-family: verdana;
-                  cursor: pointer;
-                }
-
                 .button2 {
                   background-color: #ffd2c6;
                   border: none;
@@ -383,34 +365,64 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
                 }
               </style>    
 
-        <div class="w3-col">
+
+        <div class="w3-half">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>You/Your Avatar</h3>
+            </div>
+            <div class="w3-container" style="background-color:white">
+
+            <div class="circle" align="center"><br><br>
+              <img class="profile-pic" src="/images/Happy.png">
+            </div>
+               
+              <br><br>
+              <div class="p-image" align="center">
+                <i class="fa fa-camera upload-button" style="color:gray">
+                  <p>Change Avatar </p>
+                </i>
+          <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
+          <br>
+           <button class="btn btn-default likeBtn" onclick="openMsg()">  Press if you made changes to your avatar</button>
+                <br></div>
 
 
-
-              <div id="journalMsg" class="overlay">
+              <div id="avatarMsg" class="overlay">
                 <div class="overlay-content">
-                  <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
-                    Be sure to check up on your friends as well as yourself!</h3>
+                  <h3 style="color:white">Thank you for changing your avatar!<br><br>
+                    Hoping you have a good day regardless of how you feel!</h3>
                   <br>
-                  <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
+                  <a href="javascript:void(0)" class="button2" onclick="closeMsg()">OK!</a>
 
                 </div>
               </div>
 
-              <center><button class="button" onclick="openMsg()">OK!</a></button></center>
-
               <script>
                 function openMsg() {
-                  document.getElementById("journalMsg").style.display = "block";
+                  document.getElementById("avatarMsg").style.display = "block";
                 }
 
                 function closeMsg() {
-                  document.getElementById("journalMsg").style.display = "none";
+                  document.getElementById("avatarMsg").style.display = "none";
                 }
               </script> 
 
-              <br><br>
-   </div>
+
+                <br><br>
+
+        <div class="w3-half">
+          <div class="w3-card white">
+            <div class="w3-container" style="background-color:#fbefef">
+              <h3>Health Status Journal</h3>
+            </div>
+            <div class="w3-container">
+              <h3 class="w3-text-theme">
+                <textarea rows="4px">Write your thoughts here! </textarea></h3>
+
+
+
+        
               </div>
             </div>
  </div>
