@@ -21,7 +21,9 @@ body, input, button {
   left: 0;
   z-index: 5;
 
-  background: #DB8A74;
+  background: #ffffff;
+  border: 10px;
+  border-color:#DB8A74;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -32,17 +34,16 @@ body, input, button {
   height: 50px;
   float: left;
   background-color: #ffffff;
-  color: #ffffff;
+  color: gray;
   font-size: 15px;
   font-weight: 400;
   text-indent: 18px;
   padding: 0 60px 0 px;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px 25px 25px 5px;
-  border: 0px;
-  box-shadow: none;
+  border: 2px;
+  box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15); ;
   outline: none;
-  position:absolute;
 
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -68,7 +69,7 @@ body, input, button {
   width: 50px;
   height: 50px;
 position: absolute;
-  right:50px;
+  right: 50px;
   z-index:2;
 
   border-radius: 20px;
@@ -111,12 +112,10 @@ ul.todo {
 ul.todo li {
   width: 100%;
   min-height: 50px;
-  float: left;
-  font-size: 14px;
-  font-weight: 500;
-  color: #444;
+  font-size: 24px;
+  color: #DB8A74;
   line-height: 22px;
-
+  text-align:center;
   background: #fff;
   border-radius: 5px;
   position: relative;
@@ -143,7 +142,7 @@ ul.todo li .buttons button {
   width: 50px;
   height: 50px;
   float: left;
-  margin-left: 60px;
+  margin-left: 70%;
   background: none;
   position: relative;
   border: 0px;
@@ -169,8 +168,6 @@ ul.todo li .buttons button:last-of-type:before {
 ul.todo li .buttons button svg {
   width: 22px;
   height: 22px;
-
-  position: absolute;
   top: 50%;
   left: 50%;
 
@@ -193,24 +190,6 @@ ul.todo li .buttons button.remove:hover svg .fill {
 }
 
 
-
-ul.todo#completed {
-  position: relative;
-  padding: 60px 0 0 0;
-}
-
-ul.todo#completed:before {
-  content: '';
-  width: 150px;
-  height: 1px;
-  background: #d8e5e0;
-
-  position: absolute;
-  top: 30px;
-  left: 50%;
-
-  margin: 0 0 0 -75px;
-}
 
 ul.todo#todo:empty:after {
   content: 'Add one reminder of the day!';
