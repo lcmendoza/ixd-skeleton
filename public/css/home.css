@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 
 body {
-  background: #edf0f1;
+  background: #F7EDF0;
 }
 
 i {
@@ -40,6 +40,7 @@ select {
   border-color: #E07669;
   padding-left: 30px;
 }
+
 .header p {
      color: #6e6e6e;
 }
