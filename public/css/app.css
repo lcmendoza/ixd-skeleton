@@ -1,30 +1,34 @@
-
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 
 }
-h1, h2, p, ul, li {
+/* h1, h2, p, ul, li {
   font-family: sans-serif;
 }
-h1{
+*/
+
+h1 {
   text-align: center;
   color: #FFFFFF;
   font-size: 50px;
   font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
 }
 
 .heading {
   position: center;
   background: none;
-  background-color: #DB8A74;
+  background-color: #E07669;
   width : 100%;
   height: 150px;
 }
 
-.heading h1{
+.heading h1 {
   padding: 30px;
    text-align: center;
   color: #FFFFFF;
   font-size: 50px;
   font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
@@ -33,11 +37,11 @@ h1{
      color: #6e6e6e;
 }
 
-.table h3{
+.table h3 {
    text-align: left;
-  color: #000000;
+  color: #E07669;
   font-size: 20px;
-  font-family: sans-serif;
+  font-family: 'Montserrat'. sans-serif;
   font-weight: bold;
 }
 
@@ -57,7 +61,7 @@ li {
 
 li a {
   display: block;
-  color:#DB8A74;
+  color:#E07669;
   text-align: center;
   padding: 10px;
   padding-bottom: 10px;
@@ -67,7 +71,7 @@ li a {
 
 
 ul.footer {
-    background-color: #DB8A74;
+    background-color: #E07669;
   padding: 5px;
 }
 
@@ -143,8 +147,21 @@ h2 {
   width: 100%;
 }
 
+
+ .loginButton {
+  background-color: #E07669;
+  border: none;
+  color: white;
+  height: 40px;
+  width: 100px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
+
 .button1{
-  background-color: #DB8A74;
+  background-color: #E07669;
   text-align:center;
 }
 
@@ -155,7 +172,7 @@ h2 {
   height: 50px;
   font-family: sans-serif;
   text-align: center;
-  color: #DB8A74;
+  color: #E07669;
 }
 
 .button2 {
@@ -165,10 +182,11 @@ h2 {
   height: 50px;
   font-family: sans-serif;
   text-align: center;
-  color: #DB8A74;}
+  color: #E07669;
+}
 
 .button5{
-  background-color: #DB8A74;
+  background-color: #E07669;
   font-family: sans-serif;
   padding-bottom: 50px;
 }
@@ -180,7 +198,8 @@ img {
 }
 
 p {
-  color: #DB8A74;
+  color: #E07669;
+  font-family: 'Source Sans Pro', sans-serif; 
 
 }
 
@@ -193,7 +212,7 @@ h3{
   color: #FFFFFF;
 }
  h4 {
-  color: #DB8A74;
+  color: #E07669;
 }
 
 .table i{
@@ -216,11 +235,11 @@ i{
 .mobile-app-icon-bar {
   list-style-type: none;
   padding-left:0;
-  padding-top: 0px;
+  padding-top: 10px;
   padding-bottom: 10px;
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #DB8A74;
+  background-color: #E07669;
 position: fixed;
   bottom: 0;
   align-content: center;
@@ -234,11 +253,13 @@ position: fixed;
   width: 20%;
   text-align: center;
   font-size: 10px;
-  background-color: #DB8A74;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #E07669;
 }
-.mobile-app-icon-bar p{
+.mobile-app-icon-bar p {
   color : #FFFFFF;
-  font-size: 11px;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
 } 
 
 .thumbnail {
