@@ -14,10 +14,6 @@ var random = document.querySelector('#random');
 random.innerHTML = reminders[Math.floor(Math.random() * reminders.length)];
 
 
-var random = document.querySelector('#random');
-
-random.innerHTML = help[Math.floor(Math.random() * help.length)];
-
 $(document).ready(function() {
 
     
