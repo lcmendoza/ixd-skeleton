@@ -48,6 +48,28 @@ End of Google Analytics Content Experiment code -->
     ga('send', 'pageview');
   </script>
    End Google Analytics -->
+   <script>
+$(document).ready(function(){
+  $("#onec").click(function(){
+    $("#onet").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#twoc").click(function(){
+    $("#twot").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#threec").click(function(){
+    $("#threet").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#fourc").click(function(){
+    $("#fourt").toggle();
+  });
+});
+</script>
 </head>
 
 <body>
@@ -87,7 +109,9 @@ End of Google Analytics Content Experiment code -->
             • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are
             feeling!<br><br>
             • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can
-            compare how you were feeling today versus three days ago!<br>
+            compare how you were feeling today versus three days ago!<br><br>
+             • Click the headers to hide what you don't want to see currently :) <br>
+
 
 
           </h4>
@@ -97,20 +121,14 @@ End of Google Analytics Content Experiment code -->
 
     <!--Altcode right here/ B testing -->
     {{#if viewHomeAlt}}
-<script>
-$(document).ready(function(){
-  $("w3-container").click(function(){
-    $("h3").toggle();
-  });
-});
-</script>
+
      <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
-    <button class="w3-container" style="background-color:#EDB6AF">
+    <div class="w3-container" id="onec" style="background-color:#EDB6AF">
           <h3 style="font-family: 'Montserrat', sans-serif; color:white">Reminder of the Day</h3>
-        </button>
-        <div class="w3-container" style="background-color:white">
+        </div>
+        <div class="container" id="onet" style="background-color:white">
           <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif;">
             <span id="random"></span>
           </h3>
@@ -214,11 +232,11 @@ $(document).ready(function(){
 
      <div class="w3-half">
         <div class="w3-card white">
-          <div class="w3-container" style="background-color:#fbefef">
+          <div class="w3-container" id="twoc" style="background-color:#fbefef">
             <h3>You/Your Avatar</h3>
           </div>
 
-          <div class="w3-container" style="background-color:white" align="center">
+          <div class="container" id="twot" style="background-color:white" align="center">
               <br>
               <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
               <option value="/images/Happy.png" selected>Happy</option>
@@ -271,14 +289,12 @@ $(document).ready(function(){
 
       <div class="w3-half">
         <div class="w3-card white">
-          <div class="w3-container" style="background-color:#fbefef">
+          <div class="w3-container" id="threec" style="background-color:#fbefef">
             <h3>Health Status Journal</h3>
           </div>
-          <div class="w3-container" style="background-color:white">
+          <div class="container" id="threet" style="background-color:white">
             <h3 class="w3-text-theme">
               <textarea rows="4px">Write your thoughts here! </textarea></h3>
-
-
             <div id="journalMsg" class="overlay">
               <div class="overlay-content">
                 <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
@@ -300,9 +316,7 @@ $(document).ready(function(){
                 document.getElementById("journalMsg").style.display = "none";
               }
             </script>
-
             <br><br>
-
           </div>
 
 
@@ -310,18 +324,18 @@ $(document).ready(function(){
         </div>
       </div>
   </div>
-</div>
+   <div class ="w3-padding">
   <script src="/js/project.js"></script>
       {{else}}
 
 <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
-        <div class="w3-container" style="background-color:#fbefef">
+        <div class="w3-container" id="onec"style="background-color:#fbefef">
           <h3>Reminder of the Day</h3>
         </div>
 
-        <div class="w3-container" style="background-color:white">
+        <div class="w3-container" id="onet" style="background-color:white">
           <h3 class="w3-text"> <span id="random"></span></h3>
           <ul class="w3-ul w3-border-top"></ul>
         </div>
@@ -390,10 +404,10 @@ $(document).ready(function(){
 
         <div class="w3-half">
           <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
+            <div class="w3-container" id="twoc" style="background-color:#fbefef">
               <h3>You/Your Avatar</h3>
             </div>
-            <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id="twot" style="background-color:white">
 
             <div class="circle" style = "margin-left:30%; margin-right:15%" align="center">
               <br><br>
@@ -440,10 +454,10 @@ $(document).ready(function(){
 
         <div class="w3-half">
           <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
+            <div class="w3-container" id="threec" style="background-color:#fbefef">
               <h3>Health Status Journal</h3>
             </div>
-            <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id='threet' style="background-color:white">
               <h3 class="w3-text-theme">
                 <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
@@ -456,11 +470,10 @@ $(document).ready(function(){
 {{/if}}
           <div class="w3-col">
           <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
+            <div class="w3-container" id="fourc" style="background-color:#fbefef">
               <h3>Track your well-being!</h3>
             </div>
-            <div class="w3-container" style="background-color:white">
-              <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id="fourt" style="background-color:white">
                 <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:200px; height:200px"></canvas>
                   <script>
                     var ctx = document.getElementById("myChart").getContext('2d');
