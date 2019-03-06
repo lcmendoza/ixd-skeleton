@@ -54,3 +54,13 @@ function likeClicked(e){
 }
 
 
+$(document).ready(function(){
+  $(".btn1").click(function(){
+    $("w3-container").hide();
+  });
+  $(".btn2").click(function(){
+    $("w3-container").show();
+  });
+});
+
+
