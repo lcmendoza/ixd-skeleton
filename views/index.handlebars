@@ -17,8 +17,8 @@
 
 
 <div class ="w3-row-padding">
-<header class="w3-container" style="background-color:#E07669; padding-top:10px; font-family: 'Montserrat', sans-serif" >
-   <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07669"></i>
+<header class="w3-container" style="background-color:#E07D70; padding-top:10px; font-family: 'Montserrat', sans-serif" >
+   <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07D70"></i>
   <script>
 function goBack() {
   window.history.back();
@@ -40,13 +40,13 @@ function goBack() {
 </header>
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"  style="background-color:#E07669" > 
+      <header class="w3-container w3-theme-l1"  style="background-color:#E07D70" > 
          <h2 style="color:white; font-family: 'Montserrat', sans-serif;" align="center">Reminder</h2>
         <span onclick="document.getElementById('id01').style.display='none'"
         class="w3-button w3-display-topright">×</span>
       </header>
     <div class="w3-container" style="background-color:white"> 
-      <h4 style="color: #3A405A; font-family: 'Source Sans Pro', sans-serif"> The little icons next to your friends' names gauge how they're feeling since they've last updated. 
+      <h4 style="color: #5E4442; font-family: 'Source Sans Pro', sans-serif"> The little icons next to your friends' names gauge how they're feeling since they've last updated. 
       <br><br>
       If a friend is feeling sad, cheer them up like a friend would do for you! Send them a kind word or two!
       <br><br> 
@@ -57,12 +57,14 @@ function goBack() {
     </div>
 </div>
 
-<div class = "row">
 
- <div class = "col-sm-12"> <button class="button button2" > Messages </button></div>
-</table>
-</ul>
+
+<div class="w3-card white">
+ <div class="w3-container" style="background-color: #EDBEB8">
+  <h3 style="font-family: 'Montserrat', sans-serif; color:white" align="center">Messages</h3>
 </div>
+</div> 
+
 <div class = "table">
   <table>
  {{#each projects}}
