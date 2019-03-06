@@ -292,3 +292,16 @@ img {
   transition: all .3s cubic-bezier(.175, .885, .32, 1.275);
   color: #999;
 }
+
+#submitBtn {
+    background-color: #E07669;
+  border: none;
+  color: white;
+  height:40px;
+  width:45%;
+  padding-bottom: 40px;
+  text-align: center;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+}
