@@ -151,10 +151,8 @@ body {
   list-style-type: none;
   padding-left:0;
   padding-top: 10px;
-  padding-bottom: 10px;
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #E07669;
 position: fixed;
   bottom: 0;
   align-content: center;
@@ -163,7 +161,6 @@ position: fixed;
 
 
 .mobile-app-icon-bar ul li {
-  display: inline-block;
    height: 85px;
   width: 20%;
   text-align: center;
