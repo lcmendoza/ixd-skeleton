@@ -1,4 +1,10 @@
-i{
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
+
+body {
+  background: #F7EDF0;
+}
+
+i {
   color: #ffffff;
   font-size: 30px;
    align-content: center;
@@ -11,44 +17,48 @@ i{
   top:0;
   width: 100%;
 }
+
 .heading {
   position: center;
   background: none;
-  background-color: #DB8A74;
+  background-color: #E07669;
   width : 100%;
   height: 150px;
 }
 
-.header h1{
+.header h1 {
   padding: 30px;
    text-align: center;
   color: #FFFFFF;
   font-size: 50px;
   font-weight:bolder;
+  font-family: 'Montserrat', sans-serif;
 
 }
 
-select{
-  border-color: #DB8A74;
+select {
+  border-color: #E07669;
   padding-left: 30px;
 }
+
 .header p {
      color: #6e6e6e;
 }
 
-h3{
+h3 {
    padding: 30px;
    text-align: center;
-  color: #DB8A74;
-  font-size: 50px;
-  font-weight:bolder;
+   color: #E07669;
+   font-size: 50px;
+   font-weight:bolder;
+   font-family: 'Source Sans Pro', sans-serif;
 
 }
 
-h5{
+h5 {
    padding: 10px;
    text-align: center;
-  color: #DB8A74;
+  color: #E07669;
   font-weight:bolder;
 
 }
@@ -65,7 +75,7 @@ th, td {
   border-top: 1px solid #ddd;
 }
 
-.thumbnail{
+.thumbnail {
   height: 100%;
   width:100%;
 }
@@ -78,7 +88,7 @@ th, td {
   height: 100px;
   font-family: sans-serif;
   text-align: center;
-  color: #DB8A74;
+  color: #E07669;
   cursor: not-allowed;}
 
   .button1 {
@@ -132,7 +142,7 @@ body {
 .header {
   position: center;
   background: none;
-  background-color: #DB8A74;
+  background-color: #E07669;
   width : 100%;
   height: 150px;
 }
@@ -140,38 +150,38 @@ body {
 .mobile-app-icon-bar {
   list-style-type: none;
   padding-left:0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #DB8A74;
-  position: fixed;
+  background-color: #E07669;
+position: fixed;
   bottom: 0;
   align-content: center;
-  width:100%;
+  width: 100%;
 }
+
 
 .mobile-app-icon-bar ul li {
   display: inline-block;
+   height: 85px;
   width: 20%;
-    padding: 0px 0 0px;
   text-align: center;
-  height: 80px;
-  background-color: #DB8A74;
-}
-.mobile-app-icon-bar p{
-  color : #FFFFFF;
   font-size: 10px;
-} 
-.mobile-app-icon-bar button {
-  background-color: #DB8A74;
-  padding: 12.5px;
-  cursor: pointer;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #E07669;
 }
+.mobile-app-icon-bar p {
+  color : #FFFFFF;
+  font-size: 12px;
+  font-family: 'Source Sans Pro', sans-serif;
+} 
 
 .button {
-  font-family: sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   background-color: #FFFFFF; 
   border: none;
-  color: #0000;
+  color: #3A405A;
   padding: 20px;
   text-align: left;
   text-decoration: none;
@@ -229,7 +239,7 @@ li {
 
 li a {
   display: block;
-  color:#DB8A74;
+  color:#E07669;
   text-align: center;
   padding: 10px;
   padding-bottom: 10px;

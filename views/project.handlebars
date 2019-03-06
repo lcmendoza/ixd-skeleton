@@ -15,32 +15,35 @@
   </head>
   <body>
   <div class ="w3-row-padding">
-<header class="w3-container" style="background-color:#DB8A74" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
+<header class="w3-container" style="background-color:#E07669">
+  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07669"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">{{projectName}} 
+  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color: white; font-family: 'Montserrat', sans-serif;">{{projectName}} 
    <i onclick="document.getElementById('id01').style.display='block'" 
    class="fas fa-info-circle" style="color:white"> </i> 
 </h1>
     </div>
 </header>
 </div>
+
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"  style="background-color:#DB8A74" > 
-         <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">{{projectName}}</h1>
+      <header class="w3-container w3-theme-l1"  style="background-color:#E07669" > 
+         <h2 style="color:white; font-family: 'Montserrat', sans-serif" align="center">{{projectName}}</h2>
         <span onclick="document.getElementById('id01').style.display='none'"
         class="w3-button w3-display-topright">×</span>
       </header>
     <div class="w3-container" style="background-color: #fbefef"> 
-      <h2 style ="color:black"> {{projectName}}'s Emotional Graph </h2></div>
+      <h2 style ="color:#3A405A"> {{projectName}}'s Emotional Graph </h2></div>
+
       <div class="w3-container">
      <h3 class="w3-text-indigo"> <canvas id="myChart" style ="width:200px; height:200px"></canvas>
+
 <script>
 var ctx = document.getElementById("myChart").getContext('2d');
 var myChart = new Chart(ctx, {
@@ -94,17 +97,17 @@ var myChart = new Chart(ctx, {
             <div class="conversation">
               <div class="conversation-container">
                 <div class="message sent">
-                  Hey how are you feeling?
+                  Hey, how are you feeling?
                   <span class="metadata">
                       <span class="time">12:16 AM</span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"></path></svg></span>
                   </span>
                 </div>
                 <div class="message received">
-                  Not so good..
+                  Not so good...
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
                 <div class="message sent">
-                 I'll come over with a movie and some snacks?
+                 Should I come over with a movie and some snacks?
                   <span class="metadata">
                       <span class="time">12:16 AM</span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"></path></svg></span>
                   </span>
@@ -118,7 +121,7 @@ var myChart = new Chart(ctx, {
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
              <div class="message received">
-                   All thanks to you ;) 
+                   Thanks for cheering me up! :^)
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
               </div>
@@ -140,6 +143,9 @@ var myChart = new Chart(ctx, {
     <br>
 
 <div class = "row">
+<h1> - </h1>
+</div>
+
 <div class="mobile-app-icon-bar" style ="left: 0px; position: fixed">
   <ul>
   <li>  <a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> 

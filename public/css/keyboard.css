@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
+
 *, *:before, *:after {
   box-sizing: inherit;
 }
@@ -6,7 +8,7 @@
 body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
   height: 100%;
@@ -20,10 +22,10 @@ body {
 .status-bar {
   height: 25px;
   background: #004e45;
-  color: #DB8A74 ;
+  color: #E07669;
   font-size: 14px;
   padding: 0 8px;
-  background-color: #DB8A74;
+  background-color: #E07669;
 }
 
 .status-bar:after {

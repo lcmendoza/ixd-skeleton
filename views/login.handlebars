@@ -11,7 +11,7 @@
       <link href="css/app.css" rel="stylesheet">
       <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
       <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="scss/app.scss">
+
     {{> facebook}}
     <script src="/js/facebook.js"></script>
 </head>
@@ -21,9 +21,9 @@
 <div class ="w3-row-padding">
 
 
-<header class="w3-container" style="background-color:#DB8A74; padding-top:10px;">
+<header class="w3-container" style="background-color:#E07669; padding-top:10px">
   <div class="w3-center">
-    <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; align-content: center"> Moood
+    <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white; font-family:Montserrat, sans-serif;align-content: center"> <br>Moood
       </h1>
     <div class="w3-padding-32"></div>
   </div>
@@ -33,20 +33,20 @@
 
   <div class="container">
     <br> <br>
-    <label for="name"><b>Name</b></label>
-    <input type="text" placeholder="Enter Name" name="name" required>
+    <label for="name" style="font-family: 'Montserrat', sans-serif"><b>Name</b></label>
+    <input type="text" style="font-family: 'Source Sans Pro', sans-serif" placeholder="Enter Name" name="name" required>
 
     <br><br>
 
-    <label for="pw"><b>Password</b></label>
-    <input type="password" placeholder="Enter Password" name="pw" required>
+    <label for="pw" style="font-family: 'Montserrat', sans-serif"><b>Password</b></label>
+    <input type="password" style="font-family: 'Source Sans Pro', sans-serif" placeholder="Enter Password" name="pw" required>
 
     <br> <br>
-    <button type="submit" style = "color:#DB8A74">Login</button>
+    <button class="loginButton" type="submit">Login</button>
     <br> <br>
 
 <p class="facebookLogin">
-  Please login through Facebook
+  Please login through Facebook <br>  
       <fb:login-button scope="public_profile, email" onlogin="checkLoginState();">
       </fb:login-button>
 </p>

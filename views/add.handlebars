@@ -17,15 +17,15 @@
   </head>
  <body>
 <div class ="w3-row-padding">
-<header class="w3-container" style="background-color:#DB8A74; padding-top:10px;" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#DB8A74"></i>
+<header class="w3-container" style="background-color:#E07669; padding-top:10px;" >
+  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07669"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color:white">Add Friends</h1>
+  <h1 class="w3-xxxlarge w3-animate-bottom" style="color:white; font-family: 'Montserrat', sans-serif">Add Friends</h1>
     <div class="w3-padding-32">
 
     </div>
@@ -42,7 +42,7 @@ function goBack() {
    <div class="w3-container">
   </div>
   
-  <div class="w3-container">
+  <div class="w3-container" style="background-color:white">
  <form id="addFriendForm" role="form" method="get" action="/addFriend">
         <div class= "form-group">
           <br> <br>
@@ -61,8 +61,11 @@ function goBack() {
     {{/each}}
   </ul>
  
+
 </div>
 </div>
+
+
 <div class="w3-twothird">
 <div class="w3-card white">
   <ul class="w3-ul w3-border-top">
@@ -74,6 +77,9 @@ function goBack() {
 <br> <br>
 
 <div class = "row">
+  <h3> - </h3>
+</div>
+
 <div class="mobile-app-icon-bar" style ="left: 0px; position: fixed">
   <ul>
   <li>  <a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> 
