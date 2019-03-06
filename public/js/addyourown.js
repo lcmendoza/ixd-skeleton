@@ -51,7 +51,6 @@ function removeItem() {
   if (id === 'todo') {
     data.todo.splice(data.todo.indexOf(value), 1);
   } else {
-      } else {
     data.completed.splice(data.completed.indexOf(value), 1);
     data.todo.push(value);
   }
