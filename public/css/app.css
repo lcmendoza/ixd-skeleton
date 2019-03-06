@@ -112,7 +112,7 @@ th, td {
   border-top: 1px solid #ddd;
 }
 
-h2 {
+/* h2 {
   font-family: sans-serif;
   background-color: #fccccc; 
   border: none;
@@ -126,6 +126,7 @@ h2 {
   border-radius: 12px;
   width: 50%;
 }
+*/
 
 #login-header {
   width: 100%;
@@ -215,7 +216,7 @@ h3{
   color: #E07669;
 }
 
-.table i{
+.table i {
   color: #000000;
   font-size: 50px;
   font-family:sans-serif;

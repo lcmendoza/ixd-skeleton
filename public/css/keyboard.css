@@ -20,10 +20,10 @@ body {
 .status-bar {
   height: 25px;
   background: #004e45;
-  color: #DB8A74 ;
+  color: #E07669;
   font-size: 14px;
   padding: 0 8px;
-  background-color: #DB8A74;
+  background-color: #E07669;
 }
 
 .status-bar:after {
