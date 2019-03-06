@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 
 body {
-  background: #F7EDF0;
+  background: #FFF2F2;
 }
 
 i {
@@ -21,7 +21,7 @@ i {
 .heading {
   position: center;
   background: none;
-  background-color: #E07669;
+  background-color: #E07D70;
   width : 100%;
   height: 150px;
 }
@@ -37,7 +37,7 @@ i {
 }
 
 select {
-  border-color: #E07669;
+  border-color: #D4D6D8;
   padding-left: 30px;
 }
 
@@ -142,7 +142,7 @@ body {
 .header {
   position: center;
   background: none;
-  background-color: #E07669;
+  background-color: #E07D70;
   width : 100%;
   height: 150px;
 }
@@ -154,7 +154,7 @@ body {
   padding-bottom: 10px;
   margin-bottom: 0;
   margin-top: 0;
-  background-color: #E07669;
+  background-color: #E07D70;
 position: fixed;
   bottom: 0;
   align-content: center;
@@ -169,7 +169,7 @@ position: fixed;
   text-align: center;
   font-size: 10px;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #E07669;
+  background-color: #E07D70;
 }
 .mobile-app-icon-bar p {
   color : #FFFFFF;
