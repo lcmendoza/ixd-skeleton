@@ -49,6 +49,28 @@ End of Google Analytics Content Experiment code -->
   </script>
    End Google Analytics -->
 
+   <script>
+$(document).ready(function(){
+  $("#onec").click(function(){
+    $("#onet").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#twoc").click(function(){
+    $("#twot").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#threec").click(function(){
+    $("#threet").toggle();
+  });
+});
+$(document).ready(function(){
+  $("#fourc").click(function(){
+    $("#fourt").toggle();
+  });
+});
+</script>
 </head>
 
 <body>
@@ -88,7 +110,9 @@ End of Google Analytics Content Experiment code -->
             • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are
             feeling!<br><br>
             • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can
-            compare how you were feeling today versus three days ago!<br>
+            compare how you were feeling today versus three days ago!<br><br>
+             • Click the headers to hide what you don't want to see currently :) <br>
+
 
 
           </h4>
@@ -102,17 +126,26 @@ End of Google Analytics Content Experiment code -->
      <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
+
         <div class="w3-container" style="background-color:#EDBEB8">
           <h3 style="font-family: 'Montserrat', sans-serif; color:white">Reminder of the Day</h3>
         </div>
         <div class="w3-container" style="background-color:white">
           <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif; color: #5E4442">
+
+    <div class="w3-container" id="onec" style="background-color:#EDB6AF">
+          <h3 style="font-family: 'Montserrat', sans-serif; color:white">Reminder of the Day</h3>
+        </div>
+        <div class="container" id="onet" style="background-color:white">
+          <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif;">
+
             <span id="random"></span>
           </h3>
           <ul class="w3-ul w3-border-top"></ul>
      <div class="w3-container" style="background-color:#EDBEB8">
           <h5 style="font-family: 'Montserrat', sans-serif; color:white">Add your own positive reminder!</h5>
         </div>       
+
   <div class="reminder" style="background-color: #EDBEB8">
       <input type="text" style="background-color:white; font-family: 'Source Sans Pro', sans-serif;"  id="item">
       <button id="add" class="btn btn-default likeBtn">
@@ -120,9 +153,10 @@ End of Google Analytics Content Experiment code -->
       </button>
     </div>
 <br><br>
+
     <div class="w3-container">
-      <ul class="todo" id="todo"></ul>
-      <ul class="todo" id="completed"></ul>
+      <ul class="todo" id="reminders"></ul>
+      <ul class="todo" id="reminded"></ul>
       <br> <br> 
       <br>
 </div>
@@ -224,11 +258,17 @@ End of Google Analytics Content Experiment code -->
 
      <div class="w3-half">
         <div class="w3-card white">
+
           <div class="w3-container" style="background-color:#EDBEB8">
             <h3 style="font-family: 'Montserrat', sans-serif; color: white">You / Your Avatar</h3>
+
+
+   <div class="w3-container" id="twoc" style="background-color:#fbefef">
+            <h3>You/Your Avatar</h3>
+
           </div>
 
-          <div class="w3-container" style="background-color:white" align="center">
+          <div class="container" id="twot" style="background-color:white" align="center">
               <br>
               <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
               <option value="/images/Happy.png" selected>Happy</option>
@@ -282,6 +322,7 @@ End of Google Analytics Content Experiment code -->
 
       <div class="w3-half">
         <div class="w3-card white">
+
           <div class="w3-container" style="background-color:#EDBEB8">
             <h3 style="font-family: 'Montserrat', sans-serif; color: white">Status Journal</h3>
           </div>
@@ -290,6 +331,14 @@ End of Google Analytics Content Experiment code -->
               <textarea rows="5px">Share some thoughts over here! </textarea></h3>
               <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">How was your day? Want to update your friends? <br>Talk about anything and everything! </text></center>
 
+
+
+          <div class="w3-container" id="threec" style="background-color:#fbefef">
+            <h3>Health Status Journal</h3>
+          </div>
+          <div class="container" id="threet" style="background-color:white">
+            <h3 class="w3-text-theme">
+              <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
             <div id="journalMsg" class="overlay">
               <div class="overlay-content">
@@ -312,9 +361,7 @@ End of Google Analytics Content Experiment code -->
                 document.getElementById("journalMsg").style.display = "none";
               }
             </script>
-
             <br><br>
-
           </div>
 
 
@@ -322,18 +369,23 @@ End of Google Analytics Content Experiment code -->
         </div>
       </div>
   </div>
-</div>
+   <div class ="w3-padding">
   <script src="/js/project.js"></script>
       {{else}}
 
 <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
+
         <div class="w3-container" style="background-color:#EDBEB8">
           <h3 style="font-family: 'Montserrat', sans-serif; color: white">Reminder of the Day</h3>
+
+        <div class="w3-container" id="onec"style="background-color:#fbefef">
+          <h3>Reminder of the Day</h3>
+
         </div>
 
-        <div class="w3-container" style="background-color:white">
+        <div class="w3-container" id="onet" style="background-color:white">
           <h3 class="w3-text"> <span id="random"></span></h3>
           <ul class="w3-ul w3-border-top"></ul>
         </div>
@@ -402,10 +454,10 @@ End of Google Analytics Content Experiment code -->
 
         <div class="w3-half">
           <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
+            <div class="w3-container" id="twoc" style="background-color:#fbefef">
               <h3>You/Your Avatar</h3>
             </div>
-            <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id="twot" style="background-color:white">
 
             <div class="circle" style = "margin-left:30%; margin-right:15%" align="center">
               <br><br>
@@ -452,10 +504,10 @@ End of Google Analytics Content Experiment code -->
 
         <div class="w3-half">
           <div class="w3-card white">
-            <div class="w3-container" style="background-color:#fbefef">
+            <div class="w3-container" id="threec" style="background-color:#fbefef">
               <h3>Health Status Journal</h3>
             </div>
-            <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id='threet' style="background-color:white">
               <h3 class="w3-text-theme">
                 <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
@@ -468,11 +520,15 @@ End of Google Analytics Content Experiment code -->
 {{/if}}
           <div class="w3-col">
           <div class="w3-card white">
+
             <div class="w3-container" style="background-color:#EDBEB8">
               <h3 style="font-family: 'Montserrat', sans-serif; color:white">Track your well-being!</h3>
+
+            <div class="w3-container" id="fourc" style="background-color:#fbefef">
+              <h3>Track your well-being!</h3>
+
             </div>
-            <div class="w3-container" style="background-color:white">
-              <div class="w3-container" style="background-color:white">
+            <div class="w3-container" id="fourt" style="background-color:white">
                 <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:200px; height:200px"></canvas>
                   <script>
                     var ctx = document.getElementById("myChart").getContext('2d');
@@ -592,6 +648,7 @@ End of Google Analytics Content Experiment code -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="/js/bootstrap.min.js"></script>
+    <script type ="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
     <script type="text/javascript" src="js/reminders.js"></script>

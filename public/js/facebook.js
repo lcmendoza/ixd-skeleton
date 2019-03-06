@@ -19,6 +19,7 @@ function checkLoginState() {
         })
     }
         verify();
+    }
 function statusChangeCallback(response) {
   console.log('Facebook login status changed.');
   console.log(response);
@@ -30,10 +31,7 @@ function statusChangeCallback(response) {
     // Logged into your app and Facebook.
     $(".facebookLogin").hide();
     console.log('Successfully logged in with Facebook');
-    FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
   }
 }
 
-function changeUser(response) {
-  console.log(response);
-}
+
