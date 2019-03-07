@@ -2,13 +2,18 @@
 {
 	"friends": [
 		{
-			"Username": "melissaty",
+			"Username": "Bob",
 			"image":"Sad.png",
 			"date": "10/19/18"			
 		},
 		{
-			"Username": "mtwin",
-			"image":"Happy.png",
+			"Username": "Cathy",
+			"image":"Excited.png",
+			"date": "10/12/18"			
+		},
+		{
+			"Username": "Sam",
+			"image":"Bored.png",
 			"date": "10/10/18"			
 		},
 		{
