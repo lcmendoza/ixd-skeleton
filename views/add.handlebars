@@ -17,15 +17,15 @@
   </head>
  <body>
 <div class ="w3-row-padding">
-<header class="w3-container" style="background-color:#E07669; padding-top:10px;" >
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07669"></i>
+<header class="w3-container" style="background-color:#E07D70; padding-top:10px;" >
+  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07D70"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom" style="color:white; font-family: 'Montserrat', sans-serif">Add Friends</h1>
+  <h1 class="w3-xxxlarge w3-animate-bottom" style="color:white; font-family: 'Montserrat', sans-serif"><br>Add Friends</h1>
     <div class="w3-padding-32">
 
     </div>
@@ -36,27 +36,31 @@ function goBack() {
 <div class="w3-row-padding">
 <div class="w3-col">
 <div class="w3-card white">
-  <div class="w3-container" style="background-color:#fbefef">
-    <h3>Search</h3>
-  </div>
-   <div class="w3-container">
+  <div class="w3-container" style="background-color:#EDBEB8">
+    <h3 style="font-family: 'Montserrat', sans-serif; color: white">Search</h3>
   </div>
   
   <div class="w3-container" style="background-color:white">
+
+    <br>
+
+    <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">Want to add friends so they can see how you are doing?<br>
+    Type in their username and add them easily!</text></center>
+
  <form id="addFriendForm" role="form" method="get" action="/addFriend">
         <div class= "form-group">
           <br> <br>
-          <label for="name">Username:</label>
-          <input type="text" class="form-control" id="name" placeholder="Name" name="name">
+          <label for="name" style="font-family: 'Montserrat', sans-serif; color:#5E4442">Username:</label>
+          <input type="text" style="font-family: 'Source Sans Pro', sans-serif; color:#D4D6D8" class="form-control" id="name" placeholder="Name" name="name">
         </div>
-         <input type="submit" id="submitBtn" class="button" value="Add friend"></input>
+         <input type="submit" id="submitBtn" class="button" value="Add!"></input>
     </form>
 <br> <br>
   </div>
   <ul class="w3-ul w3-border-top">
     {{# each friends}}
        <div class="w3-container">
-    <h3 style="color:black; text-align: center"> <img src="images/{{this.image}}" class ="img" style ="height:15%; width:15%; float:left">{{this.Username}} </h3>
+    <h3 style="font-family: 'Source Sans Pro', sans-serif; color:#5E4442; font-weight: bold; text-align: center"> <img src="images/{{this.image}}" class ="img" style ="height:15%; width:15%; float:left">{{this.Username}} </h3>
     </div>
     {{/each}}
   </ul>
@@ -75,10 +79,8 @@ function goBack() {
 </div>
 <br> <br>
 <br> <br>
+<div class="row"><h1>-</h1></div>
 
-<div class = "row">
-  <h3> - </h3>
-</div>
 
 <div class="mobile-app-icon-bar" style ="left: 0px; position: fixed">
   <ul>

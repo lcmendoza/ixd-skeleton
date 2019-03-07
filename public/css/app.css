@@ -7,7 +7,7 @@
 */
 
 body {
-  background: #FFF2F2;
+  background-color: #FFF2F2;
 }
 
 h1 {
@@ -206,6 +206,7 @@ img {
 
 p {
   color: #E07D70;
+  font-size: 14px;
   font-family: 'Source Sans Pro', sans-serif; 
 
 }
@@ -213,6 +214,7 @@ p {
 table {
   width: 100%;
   border-spacing: 5px;
+  background-color: white;
 }
 
 h3{
@@ -230,7 +232,7 @@ h3{
   padding: 10px 10px;
 }
 
-i{
+i {
   color: #ffffff;
   font-size: 30px;
    align-content: center;
