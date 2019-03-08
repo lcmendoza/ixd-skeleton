@@ -15,31 +15,32 @@
   </head>
   <body>
   <div class ="w3-row-padding">
-<header class="w3-container" style="background-color:#E07669">
-  <i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07669"></i>
+<header class="w3-container" style="background-color:#E07D70">
+  <br><i onclick="goBack()" class="fas fa-arrow-circle-left" style="background-color:#E07D70"></i>
   <script>
 function goBack() {
   window.history.back();
 }
 </script> 
+
   <div class="w3-center">
-  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color: white; font-family: 'Montserrat', sans-serif;">{{projectName}} 
+  <h1 class="w3-xxxlarge w3-animate-bottom" style ="color: white; font-family: 'Montserrat', sans-serif;">{{projectName}}
    <i onclick="document.getElementById('id01').style.display='block'" 
-   class="fas fa-info-circle" style="color:white"> </i> 
-</h1>
+   class="fas fa-info-circle" style="color:white"> </i> </h1>
+   <br>
     </div>
 </header>
 </div>
 
 <div id="id01" class="w3-modal">
     <div class="w3-modal-content w3-card-4 w3-animate-top">
-      <header class="w3-container w3-theme-l1"  style="background-color:#E07669" > 
+      <header class="w3-container w3-theme-l1"  style="background-color:#E07D70" > 
          <h2 style="color:white; font-family: 'Montserrat', sans-serif" align="center">{{projectName}}</h2>
         <span onclick="document.getElementById('id01').style.display='none'"
         class="w3-button w3-display-topright">×</span>
       </header>
-    <div class="w3-container" style="background-color: #fbefef"> 
-      <h2 style ="color:#3A405A"> {{projectName}}'s Emotional Graph </h2></div>
+    <div class="w3-container" style="background-color: #EDBEB8"> 
+      <h2 style ="color:white; text-align: center"> {{projectName}}'s Wellness Graph </h2></div>
 
       <div class="w3-container">
      <h3 class="w3-text-indigo"> <canvas id="myChart" style ="width:200px; height:200px"></canvas>
@@ -51,7 +52,7 @@ var myChart = new Chart(ctx, {
     data: {
         labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
         datasets: [{
-            label: 'Tracker of Happiness Points',
+            label: 'Happiness Points',
             data: [80, 60, 85, 70, 55, 90],
             backgroundColor: [
                 'rgba(255, 99, 132, 0.2)',
@@ -89,15 +90,12 @@ var myChart = new Chart(ctx, {
     </div>
 
      <div class ="w3-row-padding">
-        <div class="status-bar">
-          <div class="time"></div>
-          </div>
         <div class="chat">
           <div class="chat-container">
             <div class="conversation">
               <div class="conversation-container">
                 <div class="message sent">
-                  Hey, how are you feeling?
+                  Hey! How are you feeling?
                   <span class="metadata">
                       <span class="time">12:16 AM</span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"></path></svg></span>
                   </span>
@@ -107,7 +105,7 @@ var myChart = new Chart(ctx, {
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
                 <div class="message sent">
-                 Should I come over with a movie and some snacks?
+                 Do you want me to come over with a movie and some snacks?
                   <span class="metadata">
                       <span class="time">12:16 AM</span><span class="tick"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" id="msg-dblcheck-ack" x="2063" y="2076"><path d="M15.01 3.316l-.478-.372a.365.365 0 0 0-.51.063L8.666 9.88a.32.32 0 0 1-.484.032l-.358-.325a.32.32 0 0 0-.484.032l-.378.48a.418.418 0 0 0 .036.54l1.32 1.267a.32.32 0 0 0 .484-.034l6.272-8.048a.366.366 0 0 0-.064-.512zm-4.1 0l-.478-.372a.365.365 0 0 0-.51.063L4.566 9.88a.32.32 0 0 1-.484.032L1.892 7.77a.366.366 0 0 0-.516.005l-.423.433a.364.364 0 0 0 .006.514l3.255 3.185a.32.32 0 0 0 .484-.033l6.272-8.048a.365.365 0 0 0-.063-.51z" fill="#4fc3f7"></path></svg></span>
                   </span>
@@ -117,30 +115,26 @@ var myChart = new Chart(ctx, {
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
                  <div class="message received">
-                    <h4> <img src = "/images/Happy.png" class ="avatar" style="width:100px;height:100px"> Status updated: {{projectName}} is feeling a little better! </h4>
+                    <h4 style="font-family: 'Source Sans Pro', sans-serif;"> <img src = "/images/Happy.png" class ="avatar" style="width:100px;height:100px"> Status updated: {{projectName}} is feeling a little better! </h4>
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
              <div class="message received">
-                   Thanks for cheering me up! :^)
+                   Thanks for cheering me up!
                   <span class="metadata"><span class="time">12:16 AM</span></span>
                 </div>
               </div>
               <form class="conversation-compose">
                 <div class="emoji">
                 </div>
-                <input class="input-msg" name="input" placeholder="Help each other feel better!" autocomplete="on">
+                <input class="input-msg" style="font-family: 'Source Sans Pro', sans-serif;" name="input" placeholder="Enter your message here..." autocomplete="on">
                 <button class="send">
                     <div class="circle" style= "margin-left:3px;color:white">
                       <i class="fas fa-arrow-alt-circle-right"></i>
                     </div>
                   </button>
-              </form>
-            </div>
-          </div>
+              </form><br>
         </div>
     <br> <br>
-    <br> 
-    <br>
 
 <div class = "row">
 <h1> - </h1>

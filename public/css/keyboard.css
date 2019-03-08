@@ -21,11 +21,11 @@ body {
 
 .status-bar {
   height: 25px;
-  background: #004e45;
-  color: #E07669;
   font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: white;
   padding: 0 8px;
-  background-color: #E07669;
+  background-color: #EDBEB8;
 }
 
 .status-bar:after {
@@ -56,7 +56,7 @@ body {
 .conversation {
   height: 100%;
   position: relative;
-  background: #efe7dd;
+  background: #f4ebde;
   z-index: 0;
 }
 
@@ -92,7 +92,8 @@ body {
 
 
 .message {
-  color: #000;
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #5E4442;
   clear: both;
   line-height: 18px;
   font-size: 15px;
@@ -186,7 +187,7 @@ body {
 }
 
 .message.sent {
-  background: #fbefef;
+  background: #ffdbd6;
   border-radius: 5px 0px 5px 5px;
   float: right;
 }
@@ -280,7 +281,7 @@ body {
 .conversation-compose .send .circle {
   background: #008a7c;
   border-radius: 50%;
-  background-color: #DB8A74;
+  background-color: #E07D70;
   color: #fff;
   position: relative;
   width: 48px;
@@ -292,7 +293,7 @@ body {
 
 .conversation-compose .send .circle i {
   font-size: 24px;
-  margin-left: 5px;
+  margin-left: 2px;
 }
 
 

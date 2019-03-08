@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat:700|Source+Sans+Pro');
 
 body {
-  background: #edf0f1;
+  background: #FFF2F2;
   padding: 80px 0 0 0;
 }
 
@@ -23,7 +23,7 @@ body, input, button {
   left: 0;
   z-index: 5;
 
-  background: #eb9690;
+  background: #EDBEB8;
   box-shadow: 0px 2px 4px rgba(44, 62, 80, 0.15);
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
@@ -35,10 +35,11 @@ body, input, button {
   float: left;
   background-color: #ffffff;
   color: #ffffff;
+  font-family: 'Source Sans Pro', sans-serif;
   font-size: 15px;
   font-weight: 400;
   text-indent: 18px;
-  padding: 0 60px 0 0;
+  padding: 0 30px 0 0;
   background: rgba(255, 255, 255, 0.2);
   border-radius: 5px 25px 25px 5px;
   border: 0px;
@@ -95,7 +96,7 @@ position: absolute;
 }
 
 .activity button svg .fill {
-  fill: #DB8A74;
+  fill: #E07D70;
 }
 
 .container {
@@ -113,9 +114,10 @@ ul.todo li {
   width: 100%;
   min-height: 50px;
   float: left;
-  font-size: 14px;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 15px;
   font-weight: 500;
-  color: #444;
+  color: #5E4442;
   line-height: 22px;
 
   background: #fff;
@@ -179,13 +181,13 @@ ul.todo li .buttons button svg {
 
 ul.todo li .buttons button.complete svg {
   border-radius: 11px;
-  border: 1.5px solid #eb9690;
+  border: 1.5px solid  #E07D70;
 
   transition: background 0.2s ease;
 }
 
 ul.todo#completed li .buttons button.complete svg {
-  background: #eb9690;
+  background:  #E07D70;
   border: 0px;
 }
 
@@ -206,42 +208,37 @@ ul.todo li .buttons button svg .fill {
 }
 
 ul.todo li .buttons button.remove svg .fill {
-  fill: #eb9690;
+  fill:  #E07D70;
 }
 
 ul.todo li .buttons button.remove:hover svg .fill {
-  fill: #e85656;
+  fill: #FFEBEA;
 }
 
 ul.todo li .buttons button.complete svg .fill {
-  fill: #eb9690;
+  fill:  #E07D70;
 }
 
 ul.todo#completed {
   position: relative;
-  padding: 60px 0 0 0;
+  padding: 20px 0 0 0;
 }
 
 ul.todo#completed:before {
-  content: '';
-  width: 150px;
-  height: 1px;
-  background: #d8e5e0;
-
   position: absolute;
-  top: 30px;
   left: 50%;
-
   margin: 0 0 0 -75px;
 }
 
 ul.todo#todo:empty:after {
-  content: 'No goals in here yet!';
+  content: 'You currently have no goals.' ;
+  font-family: 'Source Sans Pro', sans-serif;
   margin: 15px 0 0 0;
 }
 
 ul.todo#completed:empty:after {
-  content: 'Complete some goals!';
+  content: 'Your completed goals go here.';
+  font-family: 'Source Sans Pro', sans-serif;
 }
 
 ul.todo#todo:after,
@@ -250,5 +247,5 @@ ul.todo#completed:after {
   display: block;
   text-align: center;
   font-size: 12px;
-  color: #aaa;
+  color: #D4D6D8;
 }

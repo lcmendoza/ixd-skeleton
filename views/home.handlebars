@@ -29,15 +29,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 
-End of Google Analytics Content Experiment code -->
-
-
-    <!-- Google Analytics 
-
 < End of Google Analytics Content Experiment code -->
 
 
-    <!-- Google Analytics >
+  <!-- Google Analytics 
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -48,7 +43,10 @@ End of Google Analytics Content Experiment code -->
     ga('send', 'pageview');
   </script>
    End Google Analytics -->
-   <script>
+
+
+
+    <script>
 $(document).ready(function(){
   $("#onec").click(function(){
     $("#onet").toggle();
@@ -69,13 +67,13 @@ $(document).ready(function(){
     $("#fourt").toggle();
   });
 });
-</script>
+</script> 
+
 </head>
 
 <body>
-  <div class="w3-row-padding">
 
-    <header class="w3-container" style="background-color: #E07669; padding-top:10px;">
+    <header class="w3-container" style="background-color: #E07D70; padding-top:10px;">
 
 
 
@@ -92,7 +90,7 @@ $(document).ready(function(){
     </header>
     <div id="id01" class="w3-modal">
       <div class="w3-modal-content w3-card-4 w3-animate-top">
-        <header class="w3-container w3-theme-l1" style="background-color: #A09ABC">
+        <header class="w3-container w3-theme-l1" style="background-color: #E07D70">
           
           <h2 style="color:white; font-family: 'Montserrat', sans-serif" align="center">
           What Do I Do?
@@ -103,14 +101,14 @@ $(document).ready(function(){
         </header>
 
         <div class="w3-container" style="background-color:white">
-          <h4 style="color: #3A405A; font-family: 'Source Sans Pro', sans-serif"">
+          <h4 style="color: #5E4442; font-family: 'Source Sans Pro', sans-serif">
             • Customize your avatar based on how you are feeling today!<br><br>
             • Write out any thoughts you have about your feelings and let your friends know how you are doing.<br><br>
             • A reminder is given to you so you can keep in touch with your emotions and possibly improve how you are
             feeling!<br><br>
             • A real-time graph is updated every time you change your avatar based on how you are feeling -- You can
             compare how you were feeling today versus three days ago!<br><br>
-             • Click the headers to hide what you don't want to see currently :) <br>
+             <!-- • Click each header to hide what you currently do not want to see. --> <br>
 
 
 
@@ -119,40 +117,42 @@ $(document).ready(function(){
       </div>
     </div>
 
-    <!--Altcode right here/ B testing -->
+    <!-- Altcode right here/ B testing -->
     {{#if viewHomeAlt}}
 
      <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
-    <div class="w3-container" id="onec" style="background-color:#EDB6AF">
+
+        <div class="w3-container" id="onec" style="background-color:#EDBEB8">
           <h3 style="font-family: 'Montserrat', sans-serif; color:white">Reminder of the Day</h3>
         </div>
-        <div class="container" id="onet" style="background-color:white">
-          <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif;">
+        <div class="w3-container" id="onet" style="background-color:white">
+          <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif; color: #5E4442">
+
             <span id="random"></span>
           </h3>
-          <ul class="w3-ul w3-border-top"></ul>
-     <div class="w3-container" style="background-color:#EDB6AF">
-          <h5 style="font-family: 'Montserrat', sans-serif; color:white">Add your own positive reminder!</h5>
+
+        <ul class="w3-ul w3-border-top"></ul>
+        <div class="w3-container" style="background-color:#EDBEB8">
+          <h5 id="onet" style="font-family: 'Montserrat', sans-serif; color:white">Add your own positive reminder!</h5>
         </div>       
-  <div class="reminder" style="background-color: #E07669">
-      <input type="text" style="background-color:#F7EDF0; color:#E07669; font-family: 'Source Sans Pro', sans-serif;" placeholder="What do you want to do?" id="item">
+  <div class="reminder"  style="background-color: #EDBEB8">
+      <input type="text" style="background-color:white; font-family: 'Source Sans Pro', sans-serif;"  id="item">
       <button id="add" class="btn btn-default likeBtn">
         <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
       </button>
     </div>
 <br><br>
-    <div class="w3-container">
-      <ul class="todo" id="reminders"></ul>
-      <ul class="todo" id="reminded"></ul>
-      <br> <br> 
+
+    <div class="w3-container" id="onet">
+      <center><ul class="todo" id="reminders"></ul></center>
+      <!-- <ul class="todo" id="reminded"></ul> -->
+      <br> 
       <br>
 </div>
 <br> <br>
-  <ul class="w3-ul w3-border-top"></ul>
-       <div class="w3-container">
-</div>
+
         </div>
       </div>
 </div>
@@ -168,7 +168,7 @@ $(document).ready(function(){
                 z-index: 1;
                 top: 0;
                 left: 0;
-                background-color: #DB8A74;
+                background-color: #e07d70;
                 opacity: 0.95;
               }
 
@@ -184,7 +184,7 @@ $(document).ready(function(){
                 padding: 15px;
                 text-decoration: none;
                 font-size: 20px;
-                color: #DB8A74;
+                color: #e07d70;
                 display: block;
                 transition: 0.3s;
               }
@@ -203,40 +203,56 @@ $(document).ready(function(){
 
 
               .button {
-                background-color: #DB8A74;
+                background-color: #E07D70;
                 border: none;
                 color: white;
                 height: 65px;
                 width: 35%;
                 text-align: center;
                 font-size: 16px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 cursor: pointer;
               }
 
               .button2 {
-                background-color: #ffd2c6;
+                background-color: #EDBEB8;
                 border: none;
                 color: white;
                 height: 60px;
                 width: 35%;
                 text-align: center;
                 font-size: 12px;
-                font-family: 'Source Sans Pro', sans-serif;
+                font-family: 'Montserrat', sans-serif;
                 margin-left: auto;
                 margin-right: auto;
                 cursor: pointer;
               }
+
+              .avi-button {
+                background-color: #E07D70;
+                border-radius: 12.5px;
+                border: none;
+                color: white;
+                height: 75px;
+                width: 75%;
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+              }
+
+
             </style>
 
 
      <div class="w3-half">
         <div class="w3-card white">
-          <div class="w3-container" id="twoc" style="background-color:#fbefef">
-            <h3>You/Your Avatar</h3>
-          </div>
 
-          <div class="container" id="twot" style="background-color:white" align="center">
+          <div class="w3-container" id="twoc" style="background-color:#EDBEB8">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: white">You / Your Avatar</h3></div>
+
+
+          <div class="w3-container" id="twot" style="background-color:white" align="center">
               <br>
               <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
               <option value="/images/Happy.png" selected>Happy</option>
@@ -247,21 +263,22 @@ $(document).ready(function(){
               <option value="/images/Annoyed.png">Annoyed</option>
               <option value="/images/Nervous.png">Afraid</option>
               </select>
-              <br><br>
-            <br><br>
+
+              <br><br><center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">Choose from a variety of moods!</text></center>
+            <br>
 
             <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
 
 
             <br><br>
-            <div class="likeCtr"><button class="btn btn-default likeBtn" onclick="openAviMsg()"> Press if you made changes to your avatar</button></div>
+            <div class="likeCtr"><button class="avi-button" onclick="openAviMsg()"><center>Click here if you made changes!</center></button></div>
             <br>
 
 
                 <div id="avatarMsg" class="overlay">
                 <div class="overlay-content">
                   <h3 style="color:white">Thank you for changing your avatar!<br><br>
-                    Hoping you have a good day regardless of how you feel!</h3>
+                    Regardless of how you feel, we hope you are having a good day!</h3>
                   <br>
                   <a href="javascript:void(0)" class="button2" onclick="closeAviMsg()">OK!</a>
 
@@ -289,12 +306,21 @@ $(document).ready(function(){
 
       <div class="w3-half">
         <div class="w3-card white">
-          <div class="w3-container" id="threec" style="background-color:#fbefef">
-            <h3>Health Status Journal</h3>
+
+          <div class="w3-container" id= "threec" style="background-color:#EDBEB8">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: white">Status Journal</h3>
           </div>
           <div class="container" id="threet" style="background-color:white">
-            <h3 class="w3-text-theme">
-              <textarea rows="4px">Write your thoughts here! </textarea></h3>
+            <h3 style="font-family: 'Source Sans Pro', sans-serif; color:#5E4442">
+              <textarea rows="5px">Share some thoughts over here! </textarea></h3>
+              <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">How was your day? Want to update your friends? <br>Talk about anything and everything! </text></center>
+
+              <br>
+
+              <center><button class="button" onclick="openMsg()">OK!</a></button></center>
+
+              <br>
+
             <div id="journalMsg" class="overlay">
               <div class="overlay-content">
                 <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
@@ -302,10 +328,10 @@ $(document).ready(function(){
                 <br>
                 <a href="javascript:void(0)" class="button2" onclick="closeMsg()">You got it!</a>
 
-              </div>
-            </div>
+              </div></div>
+            </div></div></div><br>
 
-            <center><button class="button" onclick="openMsg()">OK!</a></button></center>
+            
 
             <script>
               function openMsg() {
@@ -320,27 +346,28 @@ $(document).ready(function(){
           </div>
 
 
-          <ul class="w3-ul w3-border-top"></ul>
         </div>
       </div>
   </div>
-   <div class ="w3-padding">
+  <div class="w3-row-padding">
   <script src="/js/project.js"></script>
+      
       {{else}}
 
-<div class="w3-row-padding">
+  <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
-        <div class="w3-container" id="onec"style="background-color:#fbefef">
-          <h3>Reminder of the Day</h3>
-        </div>
 
-        <div class="w3-container" id="onet" style="background-color:white">
-          <h3 class="w3-text"> <span id="random"></span></h3>
-          <ul class="w3-ul w3-border-top"></ul>
+        <div class="w3-container" id="onec" style="background-color:#EDBEB8">
+          <h3 style="font-family: 'Montserrat', sans-serif; color:white">Reminder of the Day</h3>
         </div>
-      </div>
-</div>
+        <div class="w3-container" id="onet" style="background-color:white">
+          <h3 class="w3-text" style="font-family: 'Source Sans Pro', sans-serif; color: #5E4442">
+
+            <span id="random"></span>
+          </h3>
+        </div></div>
+
 
 
             <style>
@@ -352,7 +379,7 @@ $(document).ready(function(){
                   z-index: 1;
                   top: 0;
                   left: 0;
-                  background-color: #DB8A74;
+                  background-color: #e07d70;
                   opacity: 0.95;
                 }
 
@@ -368,7 +395,7 @@ $(document).ready(function(){
                   padding: 15px;
                   text-decoration: none;
                   font-size: 20px;
-                  color: #DB8A74;
+                  color: #e07d70;
                   display: block;
                   transition: 0.3s;
                 }
@@ -385,16 +412,28 @@ $(document).ready(function(){
                   }
                 }
 
+                .avi-button {
+                background-color: #E07D70;
+                border-radius: 12.5px;
+                border: none;
+                color: white;
+                height: 75px;
+                width: 35%;
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+                }
 
                 .button2 {
-                  background-color: #ffd2c6;
+                  background-color: #EDBEB8;
                   border: none;
                   color: white;
                   height: 60px;
                   width: 35%;
                   text-align: center;
                   font-size: 12px;
-                  font-family: verdana;
+                  font-family: 'Montserrat', sans-serif;
                   margin-left: auto;
                   margin-right: auto;
                   cursor: pointer;
@@ -403,9 +442,9 @@ $(document).ready(function(){
 
 
         <div class="w3-half">
-          <div class="w3-card white">
-            <div class="w3-container" id="twoc" style="background-color:#fbefef">
-              <h3>You/Your Avatar</h3>
+          <div class="w3-card white" style="box-shadow:0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)">
+            <div class="w3-container" id="twoc" style="background-color:#EDBEB8">
+              <h3 style="font-family: 'Montserrat', sans-serif; color:white">You / Your Avatar</h3>
             </div>
             <div class="w3-container" id="twot" style="background-color:white">
 
@@ -417,19 +456,19 @@ $(document).ready(function(){
               <br><br>
               <br>
               <div class="p-image" align="center">
-                <i class="fa fa-camera upload-button" style="color:gray;padding-left:10px">
-                  <p>Change Avatar </p>
+                <i class="fa fa-camera upload-button" style="color:#EDBEB8;padding-left:10px">
+                  <p style="font-family: 'Source Sans Pro', san-serif">Change Avatar </p>
                 </i>
           <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
           <br>
-           <button class="btn btn-default likeBtn" onclick="openMsg()" style ="size:20px">  Press if you made changes!</button>
+           <button class="avi-button" onclick="openMsg()" style ="size:20px">  Click here if you made changes!</button>
                 <br></div>
 
 
               <div id="avatarMsg" class="overlay">
                 <div class="overlay-content">
                   <h3 style="color:white">Thank you for changing your avatar!<br><br>
-                    Hoping you have a good day regardless of how you feel!</h3>
+                    Regardless of how you feel, we hope you have a good day!</h3>
                   <br>
                   <a href="javascript:void(0)" class="button2" onclick="closeMsg()">OK!</a>
 
@@ -447,18 +486,18 @@ $(document).ready(function(){
               </script> 
 
 
-                <br><br>
+                <br>
               </div>
             </div>
           </div>
 
         <div class="w3-half">
-          <div class="w3-card white">
-            <div class="w3-container" id="threec" style="background-color:#fbefef">
-              <h3>Health Status Journal</h3>
+          <div class="w3-card white" style ="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)">
+            <div class="w3-container" id="threec" style="background-color:#EDBEB8">
+              <h3 style="font-family: 'Montserrat', sans-serif; color:white">Status Journal</h3>
             </div>
-            <div class="w3-container" id='threet' style="background-color:white">
-              <h3 class="w3-text-theme">
+            <div class="container" id='threet' style="background-color:white">
+              <h3 class="w3-text-theme" style="font-family: 'Source Sans Pro', sans-serif;color:#5E4442">
                 <textarea rows="4px">Write your thoughts here! </textarea></h3>
 
 
@@ -466,15 +505,16 @@ $(document).ready(function(){
         
               </div>
             </div>
- </div>
+        </div>
+
 {{/if}}
-          <div class="w3-col">
+          <div class="w3-col" >
           <div class="w3-card white">
-            <div class="w3-container" id="fourc" style="background-color:#fbefef">
-              <h3>Track your well-being!</h3>
-            </div>
+
+            <div class="w3-container" id="fourc" style="background-color:#EDBEB8;">
+              <h3 style="font-family: 'Montserrat', sans-serif; color:white">Wellness Tracker</h3></div>
             <div class="w3-container" id="fourt" style="background-color:white">
-                <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:200px; height:200px"></canvas>
+                <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:50%;height:100px"></canvas>
                   <script>
                     var ctx = document.getElementById("myChart").getContext('2d');
                     var myChart = new Chart(ctx, {
@@ -482,7 +522,7 @@ $(document).ready(function(){
                       data: {
                         labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
                         datasets: [{
-                          label: 'Tracker of Happiness Points',
+                          label: 'Happiness Points',
                           data: [80, 60, 85, 70, 55, 90],
                           backgroundColor: [
                             'rgba(255, 99, 132, 0.2)',
@@ -516,58 +556,18 @@ $(document).ready(function(){
                   </script>
                 </h3>
               </div>
-              <ul class="w3-ul w3-border-top">
-              </ul>
-            </div>
+              <br> <br> <br>
+
+         </div>
           </div>
         </div>
-
-
-      <br> <br>
-      <br> <br>
-      <br> <br>
-
+      </div>
     </div>
 
-    <div class="mobile-app-icon-bar" style="left: 0px; position: fixed">
-      <ul>
-        <li> <a href="/home"> <i class="fas fa-home" aria-hidden="true"></i>
-            <p class="no-margin"> Home </p>
-          </a>
-        </li>
-        <li> <a href="/goals"> <i class="fas fa-tasks" aria-hidden="true"></i>
-            <p class="no-margin"> Health Goals </p>
-          </a>
-        </li>
-        <li> <a href="/index"><i class="fas fa-user" aria-hidden="true"></i>
-            <p class="no-margin"> Chat List </p>
-          </a>
-        </li>
-        <li> <a href="/add"><i class="fas fa-plus-square" aria-hidden="true"></i>
-            <p class="no-margin"> Add Friends </p>
-          </a>
-        </li>
-        <li><a href="/"><i class="fas fa-sign-out-alt" aria-hidden="true"></i>
-            <p class="no-margin"> Logout </p>
-          </a>
-        </li>
-      </ul>
-    </div>
-  </div>
 
-  <ul class="w3-ul w3-border-top">
-  </ul>
-</div>
-</div>
-</div>
-</div>
 
-<br> <br>
-<br> <br>
-<br> <br>
 
-</div>
-<div class="mobile-app-icon-bar" style ="left: 0px; position: fixed;">
+<div class="mobile-app-icon-bar" style ="left: 0px;">
   <ul>
   <li>  <a href ="/home"> <i class="fas fa-home" aria-hidden="true"></i> 
     <p class ="no-margin"> Home </p> </a>
