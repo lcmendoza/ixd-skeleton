@@ -322,30 +322,40 @@ End of Google Analytics Content Experiment code -->
         </div>
         <div class="container" id="threet" style="background-color:white">
           <h3 style="font-family: 'Source Sans Pro', sans-serif; color:#5E4442">
-            <textarea class="form-control" id="exampleFormControlTextarea5" rows="6"
+            <textarea class="form-control" id="exampleFormControlTextarea5" rows="7"
               style="font-size:24px"> Share some thoughts over here! </textarea></h3>
           <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">How was your day? Want to
               update your friends? <br>Talk about anything and everything! </text></center>
 
           <br>
+   <center><button class="button" onclick="openMsg()">OK!</a></button></center>
 
-          <center><button class="button" onclick="openMsg()">OK!</a></button></center>
-
-          <br>
-
-          <div id="journalMsg" class="overlay">
-            <div class="overlay-content">
-              <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
-                Be sure to check up on your friends as well as yourself!</h3>
               <br>
-              <a href="javascript:void(0)" class="button2" onclick="closeMsg()" style="padding-bottom:60px">You got
-                it!</a>
 
-            </div>
+            <div id="journalMsg" class="overlay">
+              <div class="overlay-content">
+                <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+                  Be sure to check up on your friends as well as yourself!</h3>
+                <br>
+                <a href="javascript:void(0)" class="button2" onclick="closeMsg()" style ="padding-bottom:60px">You got it!</a>
+
+              </div></div>
+            </div></div></div><br>
+
+            
+
+            <script>
+              function openMsg() {
+                document.getElementById("journalMsg").style.display = "block";
+              }
+
+              function closeMsg() {
+                document.getElementById("journalMsg").style.display = "none";
+              }
+            </script>
+            <br><br>
           </div>
-        </div>
-      </div>
-    </div><br>
+
 
         <div class="w3-col">
           <div class="w3-card white">
@@ -455,6 +465,7 @@ End of Google Analytics Content Experiment code -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/reminders.js"></script>
   <script type="text/javascript" src="js/buttonclick.js"></script>
+   <script type="text/javascript" src="js/project.js"></script>
   <script
     src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
