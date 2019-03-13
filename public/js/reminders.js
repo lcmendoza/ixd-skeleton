@@ -2,7 +2,7 @@ var reminders = [
 'Remember to not be ashamed of who you are!',
 'Love yourself because you are enough :)',
 'Treat others the way you would want to be treated.',
-'Take a deep breathe - you got this!', 
+'Take a deep breath - you got this!', 
 'Take it easy - it is a hard day, not a hard life.',
 'Be the change you wish to see in the world!',
 'Your feelings are valid - never question that!'
