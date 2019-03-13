@@ -15,7 +15,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
 
-<!-- Google Analytics Content Experiment code-->
+<!-- Google Analytics Content Experiment code
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='190544869-1',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -29,10 +29,10 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
 '" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 </script><script>utmx('url','A/B');</script>
 
-<!--End of Google Analytics Content Experiment code -->
+End of Google Analytics Content Experiment code -->
 
 
-  <!-- Google Analytics-->
+  <!-- Google Analytics
     <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -42,7 +42,7 @@ valueOf()+(h?'&utmxhash='+escape(h.substr(1)):'')+
     ga('create', 'UA-135175651-1', 'auto');
     ga('send', 'pageview');
   </script>
-  <!--End Google Analytics -->
+  End Google Analytics -->
 
 
 
@@ -354,7 +354,7 @@ $(document).ready(function(){
       
       {{else}}
 
-  <div class="w3-row-padding">
+     <div class="w3-row-padding">
       <div class="w3-col">
       <div class="w3-card white">
 
@@ -366,7 +366,30 @@ $(document).ready(function(){
 
             <span id="random"></span>
           </h3>
-        </div></div>
+
+        <ul class="w3-ul w3-border-top"></ul>
+        <div class="w3-container" style="background-color:#EDBEB8">
+          <h5 id="onet" style="font-family: 'Montserrat', sans-serif; color:white">Add your own positive reminder!</h5>
+        </div>       
+  <div class="reminder"  style="background-color: #EDBEB8">
+      <input type="text" style="background-color:white; font-family: 'Source Sans Pro', sans-serif;"  id="item">
+      <button id="add" class="btn btn-default likeBtn">
+        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"viewBox="0 0 16 16" style="enable-background:new 0 0 16 16;" xml:space="preserve"><g><path class="fill" d="M16,8c0,0.5-0.5,1-1,1H9v6c0,0.5-0.5,1-1,1s-1-0.5-1-1V9H1C0.5,9,0,8.5,0,8s0.5-1,1-1h6V1c0-0.5,0.5-1,1-1s1,0.5,1,1v6h6C15.5,7,16,7.5,16,8z"/></g></svg>
+      </button> </input>
+    </div>
+<br><br>
+
+    <div class="w3-container" id="onet">
+      <center><ul class="todo" id="reminders"></ul></center>
+      <!-- <ul class="todo" id="reminded"></ul> -->
+      <br> 
+      <br>
+</div>
+<br> <br>
+
+        </div>
+      </div>
+</div>
 
 
 
@@ -424,7 +447,17 @@ $(document).ready(function(){
                 font-family: 'Montserrat', sans-serif;
                 cursor: pointer;
                 }
-
+                 .button {
+                background-color: #E07D70;
+                border: none;
+                color: white;
+                height: 65px;
+                width: 35%;
+                text-align: center;
+                font-size: 16px;
+                font-family: 'Montserrat', sans-serif;
+                cursor: pointer;
+              }
                 .button2 {
                   background-color: #EDBEB8;
                   border: none;
@@ -461,6 +494,20 @@ $(document).ready(function(){
                 </i>
           <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
           <br>
+ <br>
+              <select onchange="$('#changeAvatar').attr('src', this.options[this.selectedIndex].value);">
+              <option value="/images/Happy.png" selected>Happy</option>
+              <option value="/images/Sad.png">Sad</option>
+              <option value="/images/Bored.png">Bored</option>
+              <option value="/images/Excited.png">Excited</option>
+              <option value="/images/Angry.png">Angry</option>
+              <option value="/images/Annoyed.png">Annoyed</option>
+              <option value="/images/Nervous.png">Afraid</option>
+              </select>
+
+              <br><br><center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">Choose from a variety of moods!</text></center>
+            <br>
+            <br>
            <button class="avi-button" onclick="openMsg()" style ="size:20px">  Click here if you made changes!</button>
                 <br></div>
 
@@ -493,21 +540,44 @@ $(document).ready(function(){
 
         <div class="w3-half">
           <div class="w3-card white" style ="box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12)">
-            <div class="w3-container" id="threec" style="background-color:#EDBEB8">
-              <h3 style="font-family: 'Montserrat', sans-serif; color:white">Status Journal</h3>
-            </div>
-            <div class="container" id='threet' style="background-color:white">
-              <h3 class="w3-text-theme" style="font-family: 'Source Sans Pro', sans-serif;color:#5E4442">
-                <h3 style="font-family: 'Source Sans Pro', sans-serif; color:#5E4442">
-              <textarea class="form-control" id="exampleFormControlTextarea5" rows="5.5">Share some thoughts over here! </textarea></h3>
+              <div class="w3-container" id= "threec" style="background-color:#EDBEB8">
+            <h3 style="font-family: 'Montserrat', sans-serif; color: white">Status Journal</h3>
+          </div>
+          <div class="container" id="threet" style="background-color:white">
+            <h3 style="font-family: 'Source Sans Pro', sans-serif; color:#5E4442">
+              <textarea class="form-control" id="exampleFormControlTextarea5" rows="7" style="font-size:24px"> Share some thoughts over here! </textarea></h3>
+              <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">How was your day? Want to update your friends? <br>Talk about anything and everything! </text></center>
 
- <br> <br>
+              <br>
 
-        
-              </div>
+              <center><button class="button" onclick="openMsg()">OK!</a></button></center>
 
-            </div>
-        </div>
+              <br>
+
+            <div id="journalMsg" class="overlay">
+              <div class="overlay-content">
+                <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+                  Be sure to check up on your friends as well as yourself!</h3>
+                <br>
+                <a href="javascript:void(0)" class="button2" onclick="closeMsg()" style ="padding-bottom:60px">You got it!</a>
+
+              </div></div>
+            </div></div></div><br>
+
+            
+
+            <script>
+              function openMsg() {
+                document.getElementById("journalMsg").style.display = "block";
+              }
+
+              function closeMsg() {
+                document.getElementById("journalMsg").style.display = "none";
+              }
+            </script>
+            <br><br>
+          </div>
+
 
 {{/if}}
           <div class="w3-col" >
