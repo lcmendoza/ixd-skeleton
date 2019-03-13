@@ -1,21 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>Home</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link href="/css/bootstrap.min.css" rel="stylesheet">
-      <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
-     <link href= "/css/reminders.css" rel="stylesheet">
-      <link href= "/css/home.css" rel="stylesheet">
 
-      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-      <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-    <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+<head>
+  <title>Home</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/bootstrap.min.css" rel="stylesheet">
+  <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+  <link href="/css/reminders.css" rel="stylesheet">
+  <link href="/css/home.css" rel="stylesheet">
 
-<!-- Google Analytics Content Experiment code
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/chartist.js/latest/chartist.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-2.0.2.js"></script>
+
+  <!-- Google Analytics Content Experiment code
 <script>function utmx_section(){}function utmx(){}(function(){var
 k='190544869-1',d=document,l=d.location,c=d.cookie;
 if(l.search.indexOf('utm_expid='+k)>0)return;
@@ -270,52 +273,51 @@ End of Google Analytics Content Experiment code -->
           <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">Choose from a variety of
               moods!</text></center>
           <br>
-   <br>
-              <div class="p-image" align="center">
-                <i class="fa fa-camera upload-button" style="color:#EDBEB8;padding-left:10px">
-                  <p style="font-family: 'Source Sans Pro', san-serif">Change Avatar </p>
-                </i>
-
-          <input class="file-upload" style="display:none" type="file" accept="/images/*"> 
           <br>
-          <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
+          <div class="p-image" align="center">
+            <img id="changeAvatar" class="profile-pic" src="/images/Happy.png">
+          <br></br>
+            <i class="fa fa-camera upload-button" style="color:#EDBEB8;padding-left:10px">
+              <p style="font-family: 'Source Sans Pro', san-serif">Change Avatar </p>
+            </i>
 
-    
-            <br><br>
+            <input class="file-upload" style="display:none" type="file" accept="/images/*">
+
+            <!--
             <div class="likeCtr"><button class="avi-button" onclick="openAviMsg()"><center>Click here if you made changes!</center></button></div>
+            -->
 
+            <div id="avatarMsg" class="overlay">
+              <div class="overlay-content">
+                <h3 style="color:white">Thank you for changing your avatar!<br><br>
+                  Regardless of how you feel, we hope you are having a good day!</h3>
+                <br>
+                <a href="javascript:void(0)" class="button2" onclick="closeAviMsg()">OK!</a>
 
-          <div id="avatarMsg" class="overlay">
-            <div class="overlay-content">
-              <h3 style="color:white">Thank you for changing your avatar!<br><br>
-                Regardless of how you feel, we hope you are having a good day!</h3>
-              <br>
-              <a href="javascript:void(0)" class="button2" onclick="closeAviMsg()">OK!</a>
-
+              </div>
             </div>
+
+            <script>
+              function openAviMsg() {
+                document.getElementById("avatarMsg").style.display = "block";
+              }
+
+              function closeAviMsg() {
+                document.getElementById("avatarMsg").style.display = "none";
+              }
+            </script>
+
+
+            <br><br>
           </div>
-
-          <script>
-            function openAviMsg() {
-              document.getElementById("avatarMsg").style.display = "block";
-            }
-
-            function closeAviMsg() {
-              document.getElementById("avatarMsg").style.display = "none";
-            }
-          </script>
-
-
-          <br><br>
         </div>
       </div>
     </div>
-  </div>
 
     <div class="w3-half">
       <div class="w3-card white">
 
-        <div class="w3-container" id="threec" style="background-color:#EDBEB8;">
+        <div class="w3-container" id="threec" style="background-color:#EDBEB8;" align="center">
           <h3 style="font-family: 'Montserrat', sans-serif; color: white">Status Journal</h3>
         </div>
         <div class="container" id="threet" style="background-color:white">
@@ -325,91 +327,95 @@ End of Google Analytics Content Experiment code -->
           <center><text style="font-family: 'Source Sans Pro', sans-serif; color: #D4D6D8">How was your day? Want to
               update your friends? <br>Talk about anything and everything! </text></center>
 
-          <br>
-   <center><button class="button" onclick="openMsg()">OK!</a></button></center>
+          
+          <center><button class="button" onclick="openMsg()">OK!</a></button></center>
 
+          
+
+          <div id="journalMsg" class="overlay">
+            <div class="overlay-content">
+              <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
+                Be sure to check up on your friends as well as yourself!</h3>
               <br>
+              <a href="javascript:void(0)" class="button2" onclick="closeMsg()" style="padding-bottom:60px">You got
+                it!</a>
 
-            <div id="journalMsg" class="overlay">
-              <div class="overlay-content">
-                <h3 style="color:white">Thank you for sharing how you are doing today!<br><br>
-                  Be sure to check up on your friends as well as yourself!</h3>
-                <br>
-                <a href="javascript:void(0)" class="button2" onclick="closeMsg()" style ="padding-bottom:60px">You got it!</a>
-
-              </div></div>
-            </div></div></div><br>
-
-            
-
-            <script>
-              function openMsg() {
-                document.getElementById("journalMsg").style.display = "block";
-              }
-
-              function closeMsg() {
-                document.getElementById("journalMsg").style.display = "none";
-              }
-            </script>
-            <br><br>
-          </div>
-
-
-        <div class="w3-col">
-          <div class="w3-card white">
-
-            <div class="w3-container" id="fourc" style="background-color:#EDBEB8;">
-              <h3 style="font-family: 'Montserrat', sans-serif; color:white">Wellness Tracker</h3>
             </div>
-            <div class="w3-container" id="fourt" style="background-color:white">
-              <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:50%;"></canvas>
-                <script>
-                  var ctx = document.getElementById("myChart").getContext('2d');
-                  var myChart = new Chart(ctx, {
-                    type: 'line',
-                    data: {
-                      labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
-                      datasets: [{
-                        label: 'Happiness Points',
-                        data: [80, 60, 85, 70, 55, 90],
-                        backgroundColor: [
-                          'rgba(255, 99, 132, 0.2)',
-                          'rgba(54, 162, 235, 0.2)',
-                          'rgba(255, 206, 86, 0.2)',
-                          'rgba(75, 192, 192, 0.2)',
-                          'rgba(153, 102, 255, 0.2)',
-                          'rgba(255, 159, 64, 0.2)'
-                        ],
-                        borderColor: [
-                          'rgba(255,99,132,1)',
-                          'rgba(54, 162, 235, 1)',
-                          'rgba(255, 206, 86, 1)',
-                          'rgba(75, 192, 192, 1)',
-                          'rgba(153, 102, 255, 1)',
-                          'rgba(255, 159, 64, 1)'
-                        ],
-                        borderWidth: 1
-                      }]
-                    },
-                    options: {
-                      scales: {
-                        yAxes: [{
-                          ticks: {
-                            beginAtZero: true
-                          }
-                        }]
-                      }
-                    }
-                  });
-                </script>
-              </h3>
-            </div>
-            <br> <br> <br>
-
           </div>
         </div>
       </div>
+    </div><br>
+
+
+
+    <script>
+      function openMsg() {
+        document.getElementById("journalMsg").style.display = "block";
+      }
+
+      function closeMsg() {
+        document.getElementById("journalMsg").style.display = "none";
+      }
+    </script>
+    <br><br>
+  </div>
+
+
+  <div class="w3-col">
+    <div class="w3-card white">
+
+      <div class="w3-container" id="fourc" style="background-color:#EDBEB8;">
+        <h3 style="font-family: 'Montserrat', sans-serif; color:white">Wellness Tracker</h3>
+      </div>
+      <div class="w3-container" id="fourt" style="background-color:white">
+        <h3 class="w3-text-indigo"> <canvas id="myChart" style="width:50%;"></canvas>
+          <script>
+            var ctx = document.getElementById("myChart").getContext('2d');
+            var myChart = new Chart(ctx, {
+              type: 'line',
+              data: {
+                labels: ["2/16 12AM", "2/16 5PM", "2/18 10AM", "2/19 12PM", "2/20 11PM", "2/21 12PM"],
+                datasets: [{
+                  label: 'Happiness Points',
+                  data: [80, 60, 85, 70, 55, 90],
+                  backgroundColor: [
+                    'rgba(255, 99, 132, 0.2)',
+                    'rgba(54, 162, 235, 0.2)',
+                    'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(255, 159, 64, 0.2)'
+                  ],
+                  borderColor: [
+                    'rgba(255,99,132,1)',
+                    'rgba(54, 162, 235, 1)',
+                    'rgba(255, 206, 86, 1)',
+                    'rgba(75, 192, 192, 1)',
+                    'rgba(153, 102, 255, 1)',
+                    'rgba(255, 159, 64, 1)'
+                  ],
+                  borderWidth: 1
+                }]
+              },
+              options: {
+                scales: {
+                  yAxes: [{
+                    ticks: {
+                      beginAtZero: true
+                    }
+                  }]
+                }
+              }
+            });
+          </script>
+        </h3>
+      </div>
+      <br> <br> <br>
+
     </div>
+  </div>
+  </div>
+  </div>
   </div>
 
 
@@ -447,7 +453,6 @@ End of Google Analytics Content Experiment code -->
   <!-- Include all compiled plugins (below), or include individual files as needed -->
   <script src="/js/bootstrap.min.js"></script>
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/reminders.js"></script>
   <script
@@ -462,7 +467,7 @@ End of Google Analytics Content Experiment code -->
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
   <script type="text/javascript" src="js/reminders.js"></script>
   <script type="text/javascript" src="js/buttonclick.js"></script>
-   <script type="text/javascript" src="js/project.js"></script>
+  <script type="text/javascript" src="js/project.js"></script>
   <script
     src="https://static.codepen.io/assets/common/stopExecutionOnTimeout-de7e2ef6bfefd24b79a3f68b414b87b8db5b08439cac3f1012092b2290c719cd.js"></script>
   <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
