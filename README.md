@@ -5,4 +5,4 @@ When messaging people online, do you ever misinterpret their words and intention
 
 <a href="http://a10-moood.herokuapp.com/">Live Prototype</a>
 
-<img src="https://lh4.googleusercontent.com/Q89-Hu1zevJR1qxo2rnGARrNhi4mIxm-XL6-MUJddJfd9yMg_SdpesacUVMjerV9XGnEuaeyLHM9dA=w1920-h1066-rw">
+<img src="https://lh5.googleusercontent.com/ci70oi459sek1aQAYPCBhIzPFWrXJX6EUH7YqzqDwgO9FnkwdJ-LD-vLebwomFW5GmvOKlglxO3wBKDud4Ab=w1920-h1066-rw"></img>
